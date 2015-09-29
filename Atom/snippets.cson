@@ -1,0 +1,136 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+#
+# LaTeX
+".text.tex.latex":
+    "jpn doc w/ uplatex":
+        "prefix": "jsarticle"
+        "body": """
+            \\\\documentclass[dvipdfmx,uplatex]{jsarticle}
+            \\\\title{${1:タイトル}}
+            \\\\author{中田雄大}
+            \\\\date{\\\\today}
+            %
+            \\\\begin{document}
+
+            \\\\end{document}
+
+        """
+    "eng doc w/ pdflatex":
+        "prefix": "article"
+        "body": """
+            \\\\documentclass[a4paper]{article}
+            \\\\title{${1:title}}
+            \\\\author{Yudai NAKATA}
+            \\\\date{\\\\today}
+            %
+            \\\\begin{document}
+
+            \\\\end{document}
+
+        """
+    "jpn doc w/ lualatex":
+        "prefix": "ltjsarticle"
+        "body": """
+            \\\\documentclass{ltjsarticle}
+            \\\\usepackage{luatexja}
+            \\\\usepackage[pass={no-math}]{luatexja-fontspec}
+            \\\\setmainfont{Times}
+            \\\\setsansfont{Helvetica Neue}
+            \\\\setmainjfont{Hiragino Mincho ProN}
+            \\\\setsansjfont{Hiragino Kaku Gothic ProN}
+            \\\\title{${1:タイトル}}
+            \\\\author{中田雄大}
+            \\\\date{\\\\today}
+            %
+            \\\\begin{document}
+
+            \\\\end{document}
+
+        """
+    "insert figure":
+        "prefix": "figure"
+        "body": """
+            \\\\begin{figure}[!hb]
+                \\\\centering
+                \\\\includegraphics{${1:path/to/figure.pdf}}
+                \\\\caption{}
+                \\\\label{fig:}
+            \\\\end{figure}
+        """
+    "insert table":
+        "prefix": "table"
+        "body": """
+            \\\\begin{table}[!hb]
+                \\\\centering
+                \\\\caption{}
+                \\\\label{tab:}
+                \\\\begin{tabular}{${1:column alignment}}
+                \\\\end{tabular}
+            \\\\end{table}
+        """
+    "usepackage":
+        "prefix": "pkg"
+        "body": "\\\\usepackage$2{${1:package name}}"
+#
+# LaTeX Beamer
+".text.tex.latex.beamer":
+    "frame":
+        "prefix": "frame"
+        "body": """
+            \\\\begin{frame}{${1:frame title}}
+            \t
+            \\\\end{frame}
+        """
+    "multi-columns":
+        "prefix": "columns"
+        "body": """
+        	\\\\begin{columns}[t,onlytextwidth]
+        		\\\\begin{column}{${1:column width}\textwidth}
+                \t
+        		\\\\end{column}
+        		\\\\begin{column}{}
+                \t
+        		\\\\end{column}
+        	\\\\end{columns}
+        """
+# BibTeX
+".text.bibtex":
+    "article":
+        "prefix": "article"
+        "body": """
+            @article{
+                ${1:citation label},
+                author = "$2",
+                title = "$3",
+                journal = "$4",
+                year = $5
+            }
+        """
+    "book":
+        "prefix": "book"
+        "body": """
+            @book{
+                ${1:citation label},
+                author = "$2",
+                title = "$3",
+                publisher = "$4",
+                year = $5
+            }
+        """

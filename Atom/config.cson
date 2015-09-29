@@ -1,0 +1,111 @@
+"*":
+  editor:
+    softWrap: true
+    invisibles: {}
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    preferredLineLength: 125
+    fontFamily: "SourceCodePro-ExtraLight,SourceHanSans-ExtraLight"
+    tabLength: 4
+    tabType: "soft"
+    fontSize: 13
+  core:
+    themes: [
+      "one-dark-ui"
+      "chester-atom-syntax"
+    ]
+    disabledPackages: [
+      "minimap-autohide"
+      "latex-cmdpalette"
+      "markdown-preview-plus"
+      "mathjax-wrapper"
+      "japanese-menu"
+      "term2"
+      "pdf-view"
+    ]
+    ignoredNames: [
+      ".DS_Store"
+      "*.aux"
+      "*.out"
+      "*.snm"
+      "*.toc"
+      "*.nav"
+      "*.pdf"
+      "*.synctex.gz*"
+      "*.dvi"
+    ]
+  "japanese-wrap":
+    characterWidth: {}
+  "syntax-settings":
+    source:
+      go:
+        editorSettings: {}
+      python:
+        editorSettings: {}
+  "exception-reporting":
+    userId: "861a0800-2d64-f11f-0266-75e111ec5f4a"
+  welcome:
+    showOnStartup: false
+  "autocomplete-plus": {}
+  "unity-ui": {}
+  "one-dark-ui": {}
+  minimap:
+    plugins:
+      "minimap-autohide": true
+  "git-diff":
+    showIconsInEditorGutter: true
+  "markdown-preview": {}
+  "highlight-line": {}
+  "tree-view":
+    hideIgnoredNames: true
+  pigments: {}
+  "atom-material-ui":
+    compactTreeView: true
+  "run-command": {}
+  term2: {}
+  "file-icons": {}
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+  "autocomplete-bibtex": {}
+".latex.memoir.tex.text":
+  editor:
+    preferredLineLength: 125
+".beamer.latex.tex.text":
+  editor:
+    preferredLineLength: 125
+".latex.log.text":
+  editor:
+    preferredLineLength: 125
+".latex.tex.text":
+  editor:
+    preferredLineLength: 125
+".console.python.text":
+  editor:
+    preferredLineLength: 125
+".python.text.traceback":
+  editor:
+    preferredLineLength: 125
+".python.regexp.source":
+  editor:
+    preferredLineLength: 125
+".octave.source":
+  editor:
+    preferredLineLength: 125
+".matlab.source":
+  editor:
+    preferredLineLength: 125
+".tex.text":
+  editor:
+    preferredLineLength: 125
+".bibtex.text":
+  editor:
+    preferredLineLength: 125
+".shell-session.text":
+  editor:
+    preferredLineLength: 125
+".shell.source":
+  editor:
+    preferredLineLength: 125
+".python.source":
+  editor:
+    preferredLineLength: 125
