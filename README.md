@@ -1,6 +1,6 @@
 # .dotfiles
 
-## What's this repository?
+## What is this repository?
 This repository is a part of my dotfiles.
 
 ## Content
