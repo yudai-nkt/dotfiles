@@ -1,11 +1,11 @@
 [user]
-	name = Yudai NAKATA
-	email = yudai-nkt@users.noreply.github.com
+    name = Yudai NAKATA
+    email = yudai-nkt@users.noreply.github.com
 [color]
-	ui = auto
+    ui = auto
 [core]
-	excludesfile = /Users/YudaiNAKATA/.gitignore_global
-	autocrlf = input
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
     st = status
