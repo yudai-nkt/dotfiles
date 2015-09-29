@@ -1,0 +1,26 @@
+# OS X
+.DS_Store
+*~
+
+# Git
+# .gitmodules
+
+# TeX/LaTeX
+## auxiliary files
+*.aux
+# *.lof
+*.log
+*.lot
+# *.fls
+*.out
+*.toc
+*.synctex.gz
+*.synctex.gz(busy)
+
+## output
+*.dvi
+*.pdf
+
+## Beamer class
+*.snm
+*.nav
