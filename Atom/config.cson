@@ -67,6 +67,7 @@
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
   "autocomplete-bibtex": {}
+  "terminal-panel": {}
 ".latex.memoir.tex.text":
   editor:
     preferredLineLength: 125
