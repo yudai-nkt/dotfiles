@@ -8,5 +8,6 @@
     autocrlf = input
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-    st = status
-    cmt = commit
+    st = status -sb
+    cmt = commit -m
+    rm-idx = rm --cached
