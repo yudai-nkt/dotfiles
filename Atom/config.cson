@@ -69,6 +69,8 @@
     enableLatexRenderingByDefault: true
   "autocomplete-bibtex": {}
   "terminal-panel": {}
+  tabs:
+    enableVcsColoring: true
 ".latex.memoir.tex.text":
   editor:
     preferredLineLength: 125
