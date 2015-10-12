@@ -14,6 +14,10 @@
       "one-dark-ui"
       "chester-atom-syntax"
     ]
+    customFileTypes:
+        "source.matlab": [
+            "m"
+        ]
     disabledPackages: [
       "minimap-autohide"
       "latex-cmdpalette"
