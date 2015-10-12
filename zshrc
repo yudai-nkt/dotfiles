@@ -8,6 +8,10 @@ setopt correct
 autoload -Uz compinit
 compinit
 
+# color
+autoload -U colors
+colors
+
 # disregard small/capital when tab completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
@@ -36,9 +40,9 @@ SPROMPT='❓
 zsh: %F{red}Did you mean:%f %F{blue}%r%f [Yes, No, Abort, Edit]: '
 
 # command alias
-alias la="ls -a"
-alias ll='ls -l'
-alias ldots='ls -ad .*'
+alias la='ls -aGF'
+alias ll='ls -lGF'
+alias ldots='ls -adGF .*'
 alias reload='source $HOME/.zshrc'
 alias ptex2pdf='ptex2pdf -u -l -ot "-synctex=1 -file-line-error"'
 alias activitymonitor='open "/Applications/Utilities/Activity Monitor.app"'
