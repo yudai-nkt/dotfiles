@@ -40,6 +40,7 @@ SPROMPT='❓
 zsh: %F{red}Did you mean:%f %F{blue}%r%f [Yes, No, Abort, Edit]: '
 
 # command alias
+alias mkdir='mkdir -p'
 alias la='ls -aGF'
 alias ll='ls -lGF'
 alias ldots='ls -adGF .*'
