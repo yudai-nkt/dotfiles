@@ -22,6 +22,7 @@
       "japanese-menu"
       "term2"
       "pdf-view"
+      "pigments"
     ]
     ignoredNames: [
       ".DS_Store"
