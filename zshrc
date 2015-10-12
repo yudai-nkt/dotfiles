@@ -5,7 +5,8 @@ setopt print_eight_bit
 setopt correct
 
 # enable tab completion
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+compinit
 
 # disregard small/capital when tab completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -32,12 +33,12 @@ PROMPT='%(?.😊  %F{blue}%~%f
 %F{red}❯%f%F{yellow}❯%f%F{green}❯%f )'
 
 SPROMPT='❓
-zsh: you mean %F{red}%r%f instead of %F{yellow}%R%f? [Yes: y, No: n, Abort: a, Edit: e]'
+zsh: %F{red}Did you mean:%f %F{blue}%r%f [Yes, No, Abort, Edit]: '
 
 # command alias
 alias la="ls -a"
 alias ll='ls -l'
 alias ldots='ls -ad .*'
-alias reload='source ~/.zshrc'
+alias reload='source $HOME/.zshrc'
 alias ptex2pdf='ptex2pdf -u -l -ot "-synctex=1 -file-line-error"'
 alias activitymonitor='open "/Applications/Utilities/Activity Monitor.app"'
