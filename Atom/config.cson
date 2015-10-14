@@ -15,9 +15,10 @@
       "chester-atom-syntax"
     ]
     customFileTypes:
-        "source.matlab": [
-            "m"
-        ]
+      "source.matlab": [
+        "m"
+      ]
+      source: {}
     disabledPackages: [
       "minimap-autohide"
       "latex-cmdpalette"
