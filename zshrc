@@ -46,19 +46,21 @@ RPROMPT='`git_branch_status`'
 
 # the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
 function git_branch_status {
-    local branch_name st color
+    local branch st color
 
     if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
         return
     fi
 
-    branch_name=$(basename "`git symbolic-ref HEAD 2> /dev/null`")
+    branch=$(basename "`git symbolic-ref HEAD 2> /dev/null`")
+
+    if [[ -z $branch ]]; then
+        return
+    fi
+
     st=`git status 2> /dev/null`
 
-    if [[ -z $branch_name ]]; then
-        color=%F{green}
-        branch_name='non-Git'
-    elif [[ -n `echo "$st" | grep "^nothing to"` ]]; then
+    if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
         color=%F{blue}
     elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
         color=%F{yellow}
@@ -68,7 +70,7 @@ function git_branch_status {
         color=%F{red}
     fi
 
-    echo "$color$branch_name%f%b"
+    echo "$color$branch%f%b"
 }
 
 # command alias
