@@ -27,6 +27,9 @@ zstyle ':completion:*' ignore-parents parent pwd ..
 # hash sign available also in CLI
 setopt interactive_comments
 
+# enable function expansion in prompts
+setopt prompt_subst
+
 # display current directory on tab
 echo -ne "\033]0;$(pwd | rev | awk -F \/ '{print "/"$1"/"$2}'| rev)\007"
 function chpwd() { echo -ne "\033]0;$(pwd | rev | awk -F \/ '{print "/"$1"/"$2}'| rev)\007"}
@@ -37,7 +40,36 @@ PROMPT='%(?.😊  %F{blue}%~%f
 %F{red}❯%f%F{yellow}❯%f%F{green}❯%f )'
 
 SPROMPT='❓
-zsh: %F{red}Did you mean:%f %F{blue}%r%f [Yes, No, Abort, Edit]: '
+%F{red}Did you mean:%f %B%F{blue}%r%f%b [Yes, No, Abort, Edit]: '
+
+RPROMPT='`git_branch_status`'
+
+# the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
+function git_branch_status {
+    local branch_name st color
+
+    if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
+        return
+    fi
+
+    branch_name=$(basename "`git symbolic-ref HEAD 2> /dev/null`")
+    st=`git status 2> /dev/null`
+
+    if [[ -z $branch_name ]]; then
+        color=%F{green}
+        branch_name='non-Git'
+    elif [[ -n `echo "$st" | grep "^nothing to"` ]]; then
+        color=%F{blue}
+    elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
+        color=%F{yellow}
+    elif [[ -n `echo "$st" | grep "^# Untracked"` ]]; then
+        color=%B%F{red}
+    else
+        color=%F{red}
+    fi
+
+    echo "$color$branch_name%f%b"
+}
 
 # command alias
 alias mkdir='mkdir -p'
