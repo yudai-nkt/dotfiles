@@ -63,7 +63,7 @@ function git_branch_status {
     if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
         num_color=82 #%F{blue}
     elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
-        num_color=190 #%F{yellow}
+        num_color=226 #%F{yellow}
         weight=%B
     elif [[ -n `echo "$st" | grep "^Untracked"` ]]; then
         num_color=009 #%B%F{red}
