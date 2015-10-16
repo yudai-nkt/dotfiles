@@ -18,16 +18,17 @@
       "source.matlab": [
         "m"
       ]
-      source: {}
+      source: [
+        "[object Object]"
+      ]
     disabledPackages: [
       "minimap-autohide"
       "latex-cmdpalette"
       "markdown-preview-plus"
       "mathjax-wrapper"
       "japanese-menu"
-      "term2"
-      "pdf-view"
       "pigments"
+      "pdf-view"
     ]
     ignoredNames: [
       ".DS_Store"
@@ -76,45 +77,57 @@
   "terminal-panel": {}
   tabs:
     enableVcsColoring: true
-".latex.memoir.tex.text":
-  editor:
-    preferredLineLength: 125
+  "git-log":
+    fontFamily: "SourceHanCodeJP-ExtraLight"
+    fontScale: 1.1
 ".beamer.latex.tex.text":
   editor:
     preferredLineLength: 125
-".latex.log.text":
-  editor:
-    preferredLineLength: 125
-".latex.tex.text":
-  editor:
-    preferredLineLength: 125
-".console.python.text":
-  editor:
-    preferredLineLength: 125
-".python.text.traceback":
+".latex.memoir.tex.text":
   editor:
     preferredLineLength: 125
 ".python.regexp.source":
   editor:
     preferredLineLength: 125
-".octave.source":
+".python.text.traceback":
   editor:
     preferredLineLength: 125
-".matlab.source":
+".console.python.text":
   editor:
     preferredLineLength: 125
-".tex.text":
+".latex.tex.text":
   editor:
     preferredLineLength: 125
-".bibtex.text":
+".latex.log.text":
   editor:
     preferredLineLength: 125
-".shell-session.text":
+".git-rebase.text":
+  editor:
+    preferredLineLength: 125
+".git-config.source":
+  editor:
+    preferredLineLength: 125
+".git-commit.text":
+  editor:
+    preferredLineLength: 125
+".python.source":
   editor:
     preferredLineLength: 125
 ".shell.source":
   editor:
     preferredLineLength: 125
-".python.source":
+".shell-session.text":
+  editor:
+    preferredLineLength: 125
+".bibtex.text":
+  editor:
+    preferredLineLength: 125
+".tex.text":
+  editor:
+    preferredLineLength: 125
+".matlab.source":
+  editor:
+    preferredLineLength: 125
+".octave.source":
   editor:
     preferredLineLength: 125
