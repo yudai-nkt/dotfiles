@@ -46,7 +46,7 @@ RPROMPT='`git_branch_status`'
 
 # the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
 function git_branch_status {
-    local branch st color
+    local branch st num_color weight
 
     if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
         return
@@ -61,16 +61,19 @@ function git_branch_status {
     st=`git status 2> /dev/null`
 
     if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-        color=%F{blue}
+        num_color=82 #%F{blue}
     elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
-        color=%F{yellow}
-    elif [[ -n `echo "$st" | grep "^# Untracked"` ]]; then
-        color=%B%F{red}
+        num_color=190 #%F{yellow}
+        weight=%B
+    elif [[ -n `echo "$st" | grep "^Untracked"` ]]; then
+        num_color=009 #%B%F{red}
+        weight=%B
     else
-        color=%F{red}
+        num_color=011 #%F{red}
+        weight=%B
     fi
 
-    echo "$color$branch%f%b"
+    echo -e "${weight}%{\e[38;5;${num_color}m%}$branch%{\e[m%}%b"
 }
 
 # command alias
