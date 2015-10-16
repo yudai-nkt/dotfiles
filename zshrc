@@ -75,9 +75,10 @@ function git_branch_status {
 
 # command alias
 alias mkdir='mkdir -p'
-alias la='ls -aGF'
-alias ll='ls -lGF'
-alias ldots='ls -adGF .*'
+alias ls='ls -G'
+alias la='ls -A'
+alias ll='ls -l'
+alias lad='ls -ad .*'
 alias reload='source $HOME/.zshrc'
 alias ptex2pdf='ptex2pdf -u -l -ot "-synctex=1 -file-line-error"'
 alias activitymonitor='open "/Applications/Utilities/Activity Monitor.app"'
