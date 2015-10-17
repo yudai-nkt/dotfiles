@@ -7,7 +7,7 @@
     excludesfile = ~/.gitignore_global
     autocrlf = input
 [alias]
-    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+    graph = log --graph --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)'
     st = status -sb
     cmt = commit -m
     rm-idx = rm --cached
