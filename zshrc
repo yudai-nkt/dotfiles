@@ -15,6 +15,19 @@ colors
 # disregard small/capital when tab completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# extended history search
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
+
+# share zsh history between processes
+setopt share_history
+
+# prevent from adding duplicate command into history
+setopt hist_ignore_dups
+
 # run 'cd' with a directory path if no similar commands are found
 setopt auto_cd
 
