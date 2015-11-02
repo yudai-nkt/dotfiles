@@ -6,9 +6,9 @@
     softWrapAtPreferredLineLength: true
     preferredLineLength: 125
     fontFamily: "SourceCodePro-ExtraLight,SourceHanSans-ExtraLight"
-    tabLength: 4
     tabType: "soft"
-    fontSize: 13
+    fontSize: 12
+    tabLength: 4
   core:
     themes: [
       "one-dark-ui"
@@ -26,7 +26,6 @@
       "latex-cmdpalette"
       "markdown-preview-plus"
       "mathjax-wrapper"
-      "japanese-menu"
       "pigments"
       "pdf-view"
     ]
@@ -43,6 +42,7 @@
     ]
   "japanese-wrap":
     characterWidth: {}
+    lineBreakingRule: {}
   "syntax-settings":
     source:
       go:
@@ -80,25 +80,44 @@
   "git-log":
     fontFamily: "SourceHanCodeJP-ExtraLight"
     fontScale: 1.1
-".beamer.latex.tex.text":
-  editor:
-    preferredLineLength: 125
 ".latex.memoir.tex.text":
   editor:
     preferredLineLength: 125
-".python.regexp.source":
+".beamer.latex.tex.text":
   editor:
     preferredLineLength: 125
-".python.text.traceback":
+".gohtml.html.text":
   editor:
     preferredLineLength: 125
-".console.python.text":
+".latex.log.text":
   editor:
     preferredLineLength: 125
 ".latex.tex.text":
   editor:
     preferredLineLength: 125
-".latex.log.text":
+".console.python.text":
+  editor:
+    preferredLineLength: 125
+".python.text.traceback":
+  editor:
+    preferredLineLength: 125
+".python.regexp.source":
+  editor:
+    preferredLineLength: 125
+".coffee.source":
+  editor:
+    preferredLineLength: 125
+    tabLength: 2
+".gotemplate.source":
+  editor:
+    preferredLineLength: 125
+".go.source":
+  editor:
+    preferredLineLength: 125
+".tex.text":
+  editor:
+    preferredLineLength: 125
+".bibtex.text":
   editor:
     preferredLineLength: 125
 ".git-rebase.text":
@@ -110,24 +129,25 @@
 ".git-commit.text":
   editor:
     preferredLineLength: 125
-".python.source":
-  editor:
-    preferredLineLength: 125
 ".shell.source":
   editor:
     preferredLineLength: 125
 ".shell-session.text":
   editor:
     preferredLineLength: 125
-".bibtex.text":
-  editor:
-    preferredLineLength: 125
-".tex.text":
-  editor:
-    preferredLineLength: 125
 ".matlab.source":
   editor:
     preferredLineLength: 125
 ".octave.source":
+  editor:
+    preferredLineLength: 125
+".makefile.source":
+  editor:
+    preferredLineLength: 125
+    tabLength: 4
+".python.source":
+  editor:
+    preferredLineLength: 125
+".litcoffee.source":
   editor:
     preferredLineLength: 125
