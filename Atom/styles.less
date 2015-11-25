@@ -82,41 +82,69 @@ atom-workspace-axis {
 }
 
 // Styles for the markdown preview.
-// @markdown-preview: "Helvetica Neue", Hiragino Kaku Gothic ProN W3, sans-serif;
-// .markdown-preview{
-//   font-family: @markdown-preview;
-// //  letter-spacing: 0.08em;
-//
-//   h1, h2, h3, h4, h5, h6{
-//     font-family: @markdown-preview;
-//   }
-//
-//   h1{
-//     border-bottom: 2px solid #ddd;
-//     margin: 10px 0 25px 0;
-//   }
-//
-//   h2{
-// //    border-bottom: 1px dashed #ddd;
-//     margin: 50px 0 25px 0;
-//     padding-bottom: 10px;
-//   }
-//
-//   h3,h4,h5,h6{
-//     margin: 40px 0 25px 0;
-//   }
-//
-//   p{
-//     margin: 25px 0;
-//   }
-//
-//   blockquote{
-//     margin: 25px 0;
-//     padding-left: 20px;
-//     border-left: 4px solid #ccc;
-//     font-style: italic;
-//     font-size: inherit;
-//     line-height: 1.5;
-//     p{font-size:inherit}
-//   }
-// }
+.markdown-preview{
+    font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN W3", sans-serif !important;
+    max-width: 210mm;
+    // centering
+    .center{
+        text-align: center;
+        // &:extend(.margin-clear);
+    }
+    // flush right
+    .right{
+        text-align: right;
+        // &:extend(.margin-clear);
+    }
+
+    // letter-spacing: 0.08em;
+
+    // h1, h2, h3, h4, h5, h6{
+    //     font-family: @markdown-preview;
+    // }
+
+    // h1{
+    //     border-bottom: 2px solid #ddd;
+    //     margin: 10px 0 25px 0;
+    // }
+
+    // h2{
+    //     // border-bottom: 1px dashed #ddd;
+    //     margin: 50px 0 25px 0;
+    //     padding-bottom: 10px;
+    // }
+
+    // h3,h4,h5,h6{
+    //     margin: 40px 0 25px 0;
+    // }
+
+    // p{
+    //     margin: 25px 0;
+    // }
+
+    // blockquote{
+    //     margin: 25px 0;
+    //     padding-left: 20px;
+    //     border-left: 4px solid #ccc;
+    //     font-style: italic;
+    //     font-size: inherit;
+    //     line-height: 1.5;
+    //     p{
+    //         font-size: inherit;
+    //     }
+    // }
+
+    code{
+        font-family: "Source Code Pro", monospace !important;
+    }
+
+    table{
+        margin: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        max-width: 150mm;
+        th{
+            background-color: #f8f8f8;
+            // border-color: @c_border;
+        }
+    }
+}

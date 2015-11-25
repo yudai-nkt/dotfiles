@@ -7,7 +7,7 @@
     preferredLineLength: 125
     fontFamily: "SourceCodePro-ExtraLight,SourceHanSans-ExtraLight"
     tabType: "soft"
-    fontSize: 12
+    fontSize: 13
     tabLength: 4
   core:
     themes: [
@@ -61,7 +61,9 @@
       "minimap-autohide": true
   "git-diff":
     showIconsInEditorGutter: true
-  "markdown-preview": {}
+  "markdown-preview":
+    openPreviewInSplitPane: false
+    useGitHubStyle: true
   "highlight-line": {}
   "tree-view":
     hideIgnoredNames: true
