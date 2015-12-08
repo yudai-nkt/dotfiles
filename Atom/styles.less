@@ -23,46 +23,35 @@ atom-text-editor {
 
 }
 
-// definitions of AdobeOpenSourceFont-Latin/CJK
+// definition of SourceHanCodeJP-EL family
 @font-face {
-    font-family: AdobeOpenSourceFont-Latin;
-    src: local(SourceCodePro-ExtraLight);
+    font-family: SourceHanCodeJP-EL;
+    src: local(SourceHanCodeJP-ExtraLight);
 }
 
 @font-face {
-    font-family: AdobeOpenSourceFont-Latin;
+    font-family: SourceHanCodeJP-EL;
     font-style: italic;
-    src: local(SourceCodePro-ExtraLightIt);
+    src: local(SourceHanCodeJP-ExtraLightIt);
 }
 
 @font-face {
-    font-family: AdobeOpenSourceFont-Latin;
-    font-weight: 500;
-    src: local(SourceCodePro-Medium);
+    font-family: SourceHanCodeJP-EL;
+    font-weight: bold;
+    src: local(SourceHanCodeJP-Medium);
 }
 
 @font-face {
-    font-family: AdobeOpenSourceFont-Latin;
+    font-family: SourceHanCodeJP-EL;
     font-style: italic;
-    font-weight: 500;
-    src: local(SourceCodePro-MediumIt);
-}
-
-@font-face {
-    font-family: AdobeOpenSourceFont-Japanese;
-    src: local(SourceHanSansJP-ExtraLight);
-}
-
-@font-face {
-    font-family: AdobeOpenSourceFont-Japanese;
-    font-weight: 500;
-    src: local(SourceHanSansJP-Medium);
+    font-weight: bold;
+    src: local(SourceHanCodeJP-MediumIt);
 }
 
 atom-text-editor::shadow * {
     // font setting
-    font-family: AdobeOpenSourceFont-Latin, AdobeOpenSourceFont-Japanese !important;
-    font-size: 13px;
+    font-family: SourceHanCodeJP-EL !important;
+    font-size: 12px;
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow
@@ -134,7 +123,7 @@ atom-workspace-axis {
     // }
 
     code{
-        font-family: "Source Code Pro", monospace !important;
+        font-family: "Source Han Code JP", monospace !important;
     }
 
     table{

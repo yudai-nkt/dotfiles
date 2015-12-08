@@ -5,9 +5,9 @@
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
     preferredLineLength: 125
-    fontFamily: "SourceCodePro-ExtraLight,SourceHanSans-ExtraLight"
+    fontFamily: "SourceHanCodeJP-ExtraLight"
     tabType: "soft"
-    fontSize: 13
+    fontSize: 12
     tabLength: 4
   core:
     themes: [
@@ -39,7 +39,9 @@
       "*.pdf"
       "*.synctex.gz*"
       "*.dvi"
+      "*.m4a"
     ]
+    excludeVcsIgnoredPaths: false
   "japanese-wrap":
     characterWidth: {}
     lineBreakingRule: {}
