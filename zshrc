@@ -9,7 +9,7 @@ autoload -Uz compinit
 compinit
 
 # color
-autoload -U colors
+autoload -Uz colors
 colors
 
 # disregard small/capital when tab completion
@@ -27,6 +27,8 @@ setopt share_history
 
 # prevent from adding duplicate command into history
 setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
 
 # run 'cd' with a directory path if no similar commands are found
 setopt auto_cd
@@ -98,3 +100,6 @@ alias lad='ls -ad .*'
 alias reload='source $HOME/.zshrc'
 alias ptex2pdf='ptex2pdf -u -l -ot "-synctex=1 -file-line-error"'
 alias activitymonitor='open "/Applications/Utilities/Activity Monitor.app"'
+
+export NVM_DIR="/Users/YudaiNAKATA/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
