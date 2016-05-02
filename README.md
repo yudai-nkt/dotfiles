@@ -1,20 +1,20 @@
-# .dotfiles
-
-## What is this repository?
+.dotfiles
+---
+### What is this repository?
 This repository is a part of my dotfiles and other configuration files, just for my personal convenience.
 
-## Content
-This repository contains the followings:
+### Content
+This repository contains
 
-* `Atom/`: [Atom](http://atom.io/)’s setting
-    * `config.cson`: primary configuration
+* `atom/`: [Atom](http://atom.io/)’s setting
     * `snipetts.cson`: snippets for various languages
     * `styles.less`: stylesheet for Atom’s appearance
 * `gitconfig`: Git configuration
 * `gitignore_global`: global .gitignore
-* `zshrc`: zsh configuration
+* `zshenv`: Zsh configuration
+* `zshrc`: Zsh interactive shell configuration.
 
-## Install
+### Install
 Unfortunately, deployment script is yet to be prepared. You need to do it manually.
 
 ---
