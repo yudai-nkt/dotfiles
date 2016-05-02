@@ -1,6 +1,9 @@
 # Japanese file name available
 setopt print_eight_bit
 
+# emacs keybinding
+bindkey -e
+
 # typo correction
 setopt correct
 
@@ -100,6 +103,3 @@ alias lad='ls -ad .*'
 alias reload='source $HOME/.zshrc'
 alias ptex2pdf='ptex2pdf -u -l -ot "-synctex=1 -file-line-error"'
 alias activitymonitor='open "/Applications/Utilities/Activity Monitor.app"'
-
-export NVM_DIR="/Users/YudaiNAKATA/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
