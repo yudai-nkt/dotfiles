@@ -1,0 +1,139 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+.tree-view-resizer {
+    // minimum width of the tree view
+    min-width: 200px;
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+
+}
+
+// definition of SourceHanCodeJP-L family
+@font-face {
+    font-family: SourceHanCodeJP-L;
+    src: local(SourceHanCodeJP-Light);
+}
+
+@font-face {
+    font-family: SourceHanCodeJP-L;
+    font-style: italic;
+    src: local(SourceHanCodeJP-LightIt);
+}
+
+@font-face {
+    font-family: SourceHanCodeJP-L;
+    font-weight: bold;
+    src: local(SourceHanCodeJP-Medium);
+}
+
+@font-face {
+    font-family: SourceHanCodeJP-L;
+    font-style: italic;
+    font-weight: bold;
+    src: local(SourceHanCodeJP-MediumIt);
+}
+
+atom-text-editor::shadow * {
+    // font setting
+    font-family: SourceHanCodeJP-L !important;
+    font-size: 12px;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+atom-workspace-axis {
+    // transparent non-active pane
+    .pane {
+        opacity: 0.5;
+        &.active {
+            opacity: 1.0;
+        }
+    }
+}
+
+// Styles for the markdown preview.
+.markdown-preview{
+    font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN W3", sans-serif !important;
+    max-width: 210mm;
+    // centering
+    .center{
+        text-align: center;
+        // &:extend(.margin-clear);
+    }
+    // flush right
+    .right{
+        text-align: right;
+        // &:extend(.margin-clear);
+    }
+
+    // letter-spacing: 0.08em;
+
+    // h1, h2, h3, h4, h5, h6{
+    //     font-family: @markdown-preview;
+    // }
+
+    // h1{
+    //     border-bottom: 2px solid #ddd;
+    //     margin: 10px 0 25px 0;
+    // }
+
+    // h2{
+    //     // border-bottom: 1px dashed #ddd;
+    //     margin: 50px 0 25px 0;
+    //     padding-bottom: 10px;
+    // }
+
+    // h3,h4,h5,h6{
+    //     margin: 40px 0 25px 0;
+    // }
+
+    // p{
+    //     margin: 25px 0;
+    // }
+
+    // blockquote{
+    //     margin: 25px 0;
+    //     padding-left: 20px;
+    //     border-left: 4px solid #ccc;
+    //     font-style: italic;
+    //     font-size: inherit;
+    //     line-height: 1.5;
+    //     p{
+    //         font-size: inherit;
+    //     }
+    // }
+
+    code{
+        font-family: "Source Han Code JP", monospace !important;
+    }
+
+    table{
+        margin: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        max-width: 150mm;
+        th{
+            background-color: #f8f8f8;
+            // border-color: @c_border;
+        }
+    }
+}
