@@ -6,6 +6,7 @@
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
+    ignorecase = false
 [alias]
     graph = log --graph --pretty=format:'%C(red)%h%C(reset):%C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset)' --date-order
     st = status -sb
