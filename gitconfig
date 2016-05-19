@@ -1,6 +1,6 @@
 [user]
     name = Yudai NAKATA
-	email = yudai-nkt@outlook.jp
+    email = yudai-nkt@outlook.jp
 [color]
     ui = auto
 [core]
@@ -12,3 +12,7 @@
     st = status -sb
     cmt = commit -m
     rm-idx = rm --cached
+[merge]
+    ff = false
+[pull]
+    ff = only
