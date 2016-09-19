@@ -60,38 +60,34 @@ PROMPT='%(?.😊  %F{blue}%~%f
 SPROMPT='❓
 %F{red}Did you mean:%f %B%F{blue}%r%f%b [Yes, No, Abort, Edit]: '
 
-RPROMPT='`git_branch_status`'
+RPROMPT='$(git_branch_status)'
 
 # the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
 function git_branch_status {
-    local branch st num_color weight
+    local branch st num_color num_stashed
 
     if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
         return
     fi
 
-    branch=$(basename "`git symbolic-ref HEAD 2> /dev/null`")
-
+    branch="$(git symbolic-ref --short --quiet HEAD 2> /dev/null)"
     if [[ -z $branch ]]; then
         return
     fi
 
-    st=`git status 2> /dev/null`
-
+    st=$(git status 2> /dev/null)
     if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-        num_color=82 #%F{blue}
-    elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
-        num_color=226 #%F{yellow}
-        weight=%B
-    elif [[ -n `echo "$st" | grep "^Untracked"` ]]; then
-        num_color=009 #%B%F{red}
-        weight=%B
+        num_color=82
     else
-        num_color=011 #%F{red}
-        weight=%B
+        num_color=226
     fi
 
-    echo -e "${weight}%{\e[38;5;${num_color}m%}$branch%{\e[m%}%b"
+    num_stashed=$(git stash list | wc -l | tr -d ' ')
+    if [[ $num_stashed -gt 0 ]]; then
+        is_stashed="📝"
+    fi
+
+    echo -e "%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
 }
 
 # command alias
