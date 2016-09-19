@@ -64,7 +64,7 @@ RPROMPT='$(git_branch_status)'
 
 # the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
 function git_branch_status {
-    local branch st num_color num_stashed
+    local branch st num_color num_stashed result
 
     if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
         return
@@ -82,12 +82,14 @@ function git_branch_status {
         num_color=226
     fi
 
+    result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
+
     num_stashed=$(git stash list | wc -l | tr -d ' ')
     if [[ $num_stashed -gt 0 ]]; then
-        is_stashed="📝"
+        result+="📝"
     fi
 
-    echo -e "%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
+    echo -e "$result"
 }
 
 # command alias
