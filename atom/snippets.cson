@@ -61,30 +61,6 @@
       $2
       \\\\end{document}
     """
-  "insert figure":
-    "prefix": "figure"
-    "body": """
-      \\\\begin{figure}[!hb]
-          \\\\centering
-          \\\\includegraphics{${1:path/to/figure.pdf}}
-          \\\\caption{}
-          \\\\label{fig:}
-      \\\\end{figure}
-    """
-  "insert table":
-    "prefix": "table"
-    "body": """
-      \\\\begin{table}[!hb]
-          \\\\centering
-          \\\\caption{}
-          \\\\label{tab:}
-          \\\\begin{tabular}{${1:column alignment}}
-          \\\\end{tabular}
-      \\\\end{table}
-    """
-  "usepackage":
-    "prefix": "pkg"
-    "body": "\\\\usepackage$2{${1:package name}}"
 #
 # LaTeX Beamer
 ".text.tex.latex.beamer":
