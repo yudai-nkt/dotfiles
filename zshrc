@@ -64,46 +64,46 @@ RPROMPT='$(git_branch_status)'
 
 # the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
 function git_branch_status {
-    local branch st num_color num_stashed result
+  local branch st num_color num_stashed result
 
-    if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
-        return
-    fi
+  if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
+    return
+  fi
 
-    branch="$(git symbolic-ref --short --quiet HEAD 2> /dev/null)"
-    if [[ -z $branch ]]; then
-        return
-    fi
+  branch="$(git symbolic-ref --short --quiet HEAD 2> /dev/null)"
+  if [[ -z $branch ]]; then
+    return
+  fi
 
-    st=$(git status 2> /dev/null)
-    if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-        num_color=82
-    else
-        num_color=226
-    fi
+  st=$(git status 2> /dev/null)
+  if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
+    num_color=82
+  else
+    num_color=226
+  fi
 
-    result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
+  result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
 
-    num_stashed=$(git stash list | wc -l | tr -d ' ')
-    if [[ $num_stashed -gt 0 ]]; then
-        result+="📝"
-    fi
+  num_stashed=$(git stash list | wc -l | tr -d ' ')
+  if [[ $num_stashed -gt 0 ]]; then
+    result+="📝"
+  fi
 
-    echo -e "$result"
+  echo -e "$result"
 }
 
 # command alias
 case ${OSTYPE} in
-    darwin*)
-        alias mkdir='mkdir -p'
-        alias ls='ls -G'
-        alias la='ls -A'
-        alias ll='ls -l'
-        alias lsdots='ls -ad .*'
-        alias uptex2pdf='ptex2pdf -u -l -ot "-file-line-error"'
-        ;;
-    linux*)
-        ;;
+  darwin*)
+    alias mkdir='mkdir -p'
+    alias ls='ls -G'
+    alias la='ls -A'
+    alias ll='ls -l'
+    alias lsdots='ls -ad .*'
+    alias uptex2pdf='ptex2pdf -u -l -ot "-file-line-error"'
+    ;;
+  linux*)
+    ;;
 esac
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

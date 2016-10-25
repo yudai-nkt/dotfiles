@@ -13,8 +13,8 @@
 }
 
 .tree-view-resizer {
-    // minimum width of the tree view
-    min-width: 200px;
+  // minimum width of the tree view
+  min-width: 200px;
 }
 
 // style the background and foreground colors on the atom-text-editor-element
@@ -25,33 +25,33 @@ atom-text-editor {
 
 // definition of SourceHanCodeJP-L family
 @font-face {
-    font-family: SourceHanCodeJP-L;
-    src: local(SourceHanCodeJP-Light);
+  font-family: SourceHanCodeJP-L;
+  src: local(SourceHanCodeJP-Light);
 }
 
 @font-face {
-    font-family: SourceHanCodeJP-L;
-    font-style: italic;
-    src: local(SourceHanCodeJP-LightIt);
+  font-family: SourceHanCodeJP-L;
+  font-style: italic;
+  src: local(SourceHanCodeJP-LightIt);
 }
 
 @font-face {
-    font-family: SourceHanCodeJP-L;
-    font-weight: bold;
-    src: local(SourceHanCodeJP-Medium);
+  font-family: SourceHanCodeJP-L;
+  font-weight: bold;
+  src: local(SourceHanCodeJP-Medium);
 }
 
 @font-face {
-    font-family: SourceHanCodeJP-L;
-    font-style: italic;
-    font-weight: bold;
-    src: local(SourceHanCodeJP-MediumIt);
+  font-family: SourceHanCodeJP-L;
+  font-style: italic;
+  font-weight: bold;
+  src: local(SourceHanCodeJP-MediumIt);
 }
 
 atom-text-editor::shadow * {
-    // font setting
-    font-family: SourceHanCodeJP-L !important;
-    font-size: 12px;
+  // font setting
+  font-family: SourceHanCodeJP-L !important;
+  font-size: 12px;
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow
@@ -61,42 +61,42 @@ atom-text-editor::shadow .cursor {
 }
 
 atom-workspace-axis {
-    // transparent non-active pane
-    .pane {
-        opacity: 0.5;
-        &.active {
-            opacity: 1.0;
-        }
+  // transparent non-active pane
+  .pane {
+    opacity: 0.5;
+    &.active {
+      opacity: 1.0;
     }
+  }
 }
 
 // Styles for the markdown preview.
 .markdown-preview{
-    font-family: "Helvetica Neue", "Roboto", "Hiragino Kaku Gothic", "Noto Sans CJK JP", sans-serif !important;
-    max-width: 210mm;
-    // centering
-    .center{
-        text-align: center;
-        // &:extend(.margin-clear);
-    }
-    // flush right
-    .right{
-        text-align: right;
-        // &:extend(.margin-clear);
-    }
+  font-family: "Helvetica Neue", "Roboto", "Hiragino Kaku Gothic", "Noto Sans CJK JP", sans-serif !important;
+  max-width: 210mm;
+  // centering
+  .center{
+    text-align: center;
+    // &:extend(.margin-clear);
+  }
+  // flush right
+  .right{
+    text-align: right;
+    // &:extend(.margin-clear);
+  }
 
-    code{
-        font-family: "Source Han Code JP", monospace !important;
-    }
+  code{
+    font-family: "Source Han Code JP", monospace !important;
+  }
 
-    table{
-        margin: auto;
-        border-collapse: collapse;
-        border-spacing: 0;
-        max-width: 150mm;
-        th{
-            background-color: #f8f8f8;
-            // border-color: @c_border;
-        }
+  table{
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 150mm;
+    th{
+      background-color: #f8f8f8;
+      // border-color: @c_border;
     }
+  }
 }
