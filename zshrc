@@ -105,3 +105,12 @@ case ${OSTYPE} in
     linux*)
         ;;
 esac
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f ~/.zplug/init.zsh ] && source ~/.zplug/init.zsh
+zplug "b4b4r07/enhancd", use:"init.sh"
+zplug load
+
+# added by travis gem
+[ -f /Users/yudai-nkt/.travis/travis.sh ] && source /Users/yudai-nkt/.travis/travis.sh
