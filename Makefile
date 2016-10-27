@@ -7,9 +7,9 @@ list:
 	@echo $(DOTFILES) | tr  ' ' '\n'
 
 symlink:
-	@echo 'Symlinking dotfiles into home directory...'
+	@echo 'Symlink dotfiles into home directory.'
 	@$(foreach dotfile, $(DOTFILES), ln -sfnv $(DOTDIR)/$(dotfile) $(HOME)/$(dotfile);)
-	@echo 'Target symlink done!'
 
 update:
+	@echo 'Update this repository.'
 	git pull origin master
