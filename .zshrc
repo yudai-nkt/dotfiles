@@ -114,9 +114,18 @@ esac
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-[ -f ~/.zplug/init.zsh ] && source ~/.zplug/init.zsh
-zplug "b4b4r07/enhancd", use:"init.sh"
-zplug load
+if [[ -f ~/.zplug/init.zsh ]]; then
+  source ~/.zplug/init.zsh
+  zplug "b4b4r07/enhancd", use:"init.sh"
+
+  if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+      echo; zplug install
+    fi
+  fi
+  zplug load
+fi
 
 # added by travis gem
 [ -f /Users/yudai-nkt/.travis/travis.sh ] && source /Users/yudai-nkt/.travis/travis.sh
