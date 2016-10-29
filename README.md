@@ -1,21 +1,40 @@
 .dotfiles
 ---
-### What is this repository?
-This repository is a part of my dotfiles and other configuration files, just for my personal convenience.
+My dotfiles and setup scripts
+
+### Overview
+This repository doesn’t need further introduction thanks to the pretty self-explanatory name.
 
 ### Content
-This repository contains
+This repository contains dotfiles of the following softwares:
 
-* `atom/`: [Atom](http://atom.io/)’s setting
-    * `snipetts.cson`: snippets for various languages
-    * `styles.less`: stylesheet for Atom’s appearance
-* `gitconfig`: Git configuration
-* `gitignore_global`: global .gitignore
-* `zshenv`: Zsh configuration
-* `zshrc`: Zsh interactive shell configuration.
+- [Atom][atom]
+- [EditorConfig][editorconfig]
+- [Git][git]
+- [Latexmk][latexmk]
+- [Zsh][zsh]
 
-### Install
-Unfortunately, deployment script is yet to be prepared. You need to do it manually.
+### Usage
+Just clone the repository and run `make install`.
 
----
-Yudai NAKATA
+```zsh
+git clone git@github.com:yudai-nkt/.dotfiles.git $HOME/.dotfiles
+cd .dotfiles && make install
+```
+
+I employ Make for deployment tool.
+The complete list of available targets and their purposes is detailed below.
+
+| Target | Description |
+| :-- | :-- |
+| `install` | Execute `make update` and `make symlink` sequentially and restart the shell |
+| `list` | Show the list of dotfiles to be deployed |
+| `symlink` | Create symlinks of dotfiles to be deployed |
+| `update` | Sync with the remote repository |
+
+<!--links-->
+[atom]: https://atom.io/
+[editorconfig]: http://editorconfig.org/
+[git]: https://git-scm.com/
+[latexmk]: https://www.ctan.org/pkg/latexmk
+[zsh]: http://zsh.sourceforge.net/
