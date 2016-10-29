@@ -13,3 +13,6 @@ symlink:
 update:
 	@echo 'Update this repository.'
 	git pull origin master
+
+install: update symlink
+	@exec $${SHELL} --login
