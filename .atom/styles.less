@@ -50,14 +50,8 @@ atom-text-editor::shadow .cursor {
 
 }
 
-atom-workspace-axis {
-  // transparent non-active pane
-  .pane {
-    opacity: 0.5;
-    &.active {
-      opacity: 1.0;
-    }
-  }
+atom-text-editor:not(.is-focused) {
+  opacity: 0.5;
 }
 
 // Styles for the markdown preview.
