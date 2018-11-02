@@ -1,11 +1,11 @@
-.dotfiles
----
+# .dotfiles
+
 My dotfiles and setup scripts
 
-### Overview
-This repository doesn’t need further introduction thanks to the pretty self-explanatory name.
+## Overview
+This repository shouldn't need further introduction thanks to the pretty self-explanatory name.
 
-### Content
+## Content
 This repository contains dotfiles of the following softwares:
 
 - [Atom][atom]
@@ -14,7 +14,7 @@ This repository contains dotfiles of the following softwares:
 - [Latexmk][latexmk]
 - [Zsh][zsh]
 
-### Usage
+## Usage
 Just clone the repository and run `make install`.
 
 ```zsh
