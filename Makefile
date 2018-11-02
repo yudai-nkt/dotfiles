@@ -3,7 +3,7 @@ EXCLUDES := .gitignore Makefile README.md
 DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-files))
 
 list:
-	@echo 'List the dotfiles to be deployed.'
+	@echo 'Dotfiles to be deployed are as follows.'
 	@echo $(DOTFILES) | tr  ' ' '\n'
 
 symlink:
