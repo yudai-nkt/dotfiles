@@ -4,7 +4,7 @@ DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-files))
 
 list:
 	@echo 'Dotfiles to be deployed are as follows.'
-	@echo $(DOTFILES) | tr  ' ' '\n'
+	@echo $(DOTFILES) | tr ' ' '\n'
 
 symlink:
 	@echo 'Symlink dotfiles into home directory.'
