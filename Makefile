@@ -1,5 +1,5 @@
 DOTDIR := $(PWD)
-EXCLUDES := .gitignore Makefile README.md
+EXCLUDES := .gitignore Makefile README.md $(shell find script -type f)
 DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-files))
 
 list:
