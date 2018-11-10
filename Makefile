@@ -8,7 +8,7 @@ list:
 
 symlink:
 	@echo 'Symlink dotfiles into home directory.'
-	@$(foreach dotfile, $(DOTFILES), ln -sfnv $(DOTDIR)/$(dotfile) $(HOME)/$(dotfile);)
+	@DOTDIR=$(DOTDIR) bash $(DOTDIR)/script/symlink.sh
 
 update:
 	@echo 'Update this repository.'
