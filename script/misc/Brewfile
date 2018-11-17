@@ -10,6 +10,7 @@ brew 'gnu-tar'
 brew 'grep'
 brew 'go'
 brew 'hub'
+brew 'mas'
 brew 'nkf'
 brew 'python'
 brew 'tig'
@@ -25,3 +26,5 @@ cask 'iterm2'
 cask 'mendeley-desktop'
 cask 'spotify'
 cask 'vivaldi'
+
+mas 'Airmail 3', id: 918858936
