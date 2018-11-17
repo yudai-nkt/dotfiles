@@ -114,9 +114,8 @@ esac
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if [[ -f ~/.zplug/init.zsh ]]; then
-  source ~/.zplug/init.zsh
-  zplug "b4b4r07/enhancd", use:"init.sh"
+if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
+  source ${ZPLUG_HOME}/init.zsh
 
   if ! zplug check --verbose; then
     printf "Install? [y/N]: "
