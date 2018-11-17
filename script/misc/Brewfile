@@ -20,8 +20,8 @@ brew 'zplug'
 brew 'zsh', args: ['without-etcdir']
 brew 'zsh-completions'
 
-cask install dropbox
-cask install iterm2
-cask install mendeley-desktop
-cask install spotify
-cask install vivaldi
+cask 'dropbox'
+cask 'iterm2'
+cask 'mendeley-desktop'
+cask 'spotify'
+cask 'vivaldi'
