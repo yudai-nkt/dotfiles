@@ -2,7 +2,7 @@ tap 'homebrew/bundle'
 
 brew 'coreutils'
 brew 'ffmpeg'
-brew 'fzf' # or 'fzy'
+brew 'fzf'
 brew 'ghq'
 brew 'git'
 brew 'gnu-sed'
