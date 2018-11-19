@@ -27,5 +27,6 @@ cask 'iterm2'
 cask 'mendeley-desktop'
 cask 'spotify'
 cask 'vivaldi'
+cask 'xld'
 
 mas 'Airmail 3', id: 918858936
