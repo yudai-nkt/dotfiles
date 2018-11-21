@@ -1,3 +1,22 @@
+# PATH needs to be set up first because some commands are used later on
+typeset -U path manpath
+[ -x /usr/libexec/path_helper ] && eval $(/usr/libexec/path_helper -s)
+export path=(
+  $HOME/.nodebrew/current/bin(N-/)
+  $HOME/bin(N-/)
+  /usr/local/opt/coreutils/libexec/gnubin(N-/)
+  /usr/local/opt/gnu-sed/libexec/gnubin(N-/)
+  /usr/local/opt/gnu-tar/libexec/gnubin(N-/)
+  /usr/local/bin(N-/)
+  $path
+)
+export manpath=(
+  /usr/local/opt/coreutils/libexec/gnuman(N-/)
+  /usr/local/opt/gnu-sed/libexec/gnuman(N-/)
+  /usr/local/opt/gnu-tar/libexec/gnuman(N-/)
+  $manpath
+)
+
 # XDG Base Directory Specification
 export XDG_CONFIG_HOME=${HOME}/.config
 export XDG_CACHE_HOME=${HOME}/.cache
@@ -12,7 +31,9 @@ export ZPLUG_CACHE_DIR=${XDG_CACHE_HOME}/zplug
 
 export GIBO_BOILERPLATES=${XDG_DATA_HOME}/gibo
 
-export path=($HOME/.nodebrew/current/bin(N-/) /usr/local/bin /usr/bin /bin /usr/sbin /sbin)
+export BREW_PREFIX=$(brew --prefix)
+export GOPATH=${HOME}
+export GHQ_ROOT=${GOPATH}/src
 export LANG=ja_JP.UTF-8
 export PAGER=less
 export LESS='--hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
