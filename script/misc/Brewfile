@@ -1,4 +1,5 @@
 tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
 
 brew 'coreutils'
 brew 'ffmpeg'
@@ -28,5 +29,10 @@ cask 'mendeley-desktop'
 cask 'spotify'
 cask 'vivaldi'
 cask 'xld'
+
+cask 'font-source-han-code-jp'
+cask 'font-inconsolata'
+cask 'font-noto-sans-cjk-jp'
+cask 'font-roboto'
 
 mas 'Airmail 3', id: 918858936
