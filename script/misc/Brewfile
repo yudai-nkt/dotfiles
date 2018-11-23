@@ -23,6 +23,7 @@ brew 'zplug'
 brew 'zsh', args: ['without-etcdir']
 brew 'zsh-completions'
 
+cask 'adobe-acrobat-reader'
 cask 'dropbox'
 cask 'iterm2'
 cask 'mendeley-desktop'
