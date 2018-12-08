@@ -22,7 +22,7 @@ else
 fi
 
 # Install Homebrew formulae
-/usr/local/bin/brew bundle --file ${DOTDIR}/script/misc/Brewfile
+/usr/local/bin/brew bundle --file=${DOTDIR}/script/misc/Brewfile
 
 # Change login shell to Homebrewed Zsh
 sudo echo "$(/usr/local/bin/brew --prefix)/bin/zsh" >> /etc/shells
