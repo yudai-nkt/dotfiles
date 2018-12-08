@@ -1,4 +1,4 @@
-# .dotfiles
+# dotfiles
 
 My dotfiles and setup scripts
 
@@ -19,11 +19,11 @@ This repository contains dotfiles of the following softwares:
 Just clone the repository and run `make install`.
 
 ```zsh
-git clone git@github.com:yudai-nkt/.dotfiles.git $HOME/.dotfiles
-cd .dotfiles && make install
+git clone git@github.com:yudai-nkt/dotfiles.git
+cd ./dotfiles && make install
 ```
 
-I employ Make for deployment tool.
+Make is employed as deployment tool.
 The complete list of available targets and their purposes is detailed below.
 
 | Target | Description |
