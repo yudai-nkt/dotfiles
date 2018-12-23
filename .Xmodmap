@@ -1,0 +1,8 @@
+! Switch meta and control
+keycode 67 = Meta_L
+keycode 63 = Control_L
+keycode 71 = Control_R
+clear Mod2
+clear Control
+add Mod2 = Meta_L
+add Control = Control_L Control_R
