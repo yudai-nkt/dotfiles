@@ -37,5 +37,5 @@ if [[ -d /Applications/Atom.app ]]; then
 fi
 
 # Change login shell to Homebrewed Zsh
-sudo echo "$(/usr/local/bin/brew --prefix)/bin/zsh" >> /etc/shells
+echo "$(/usr/local/bin/brew --prefix)/bin/zsh" | sudo tee -a /etc/shells
 chsh -s "$(/usr/local/bin/brew --prefix)/bin/zsh"
