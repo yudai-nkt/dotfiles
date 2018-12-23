@@ -36,6 +36,12 @@ if [[ -d /Applications/Atom.app ]]; then
   ${ATOM_INSTALL_DIR}/apm install --packages-file ${DOTDIR}/script/misc/atom-packages
 fi
 
+# Show English directory names in Finder
+for dir in Desktop Documents Downloads Movies Music Pictures Public; do
+  rm "${HOME}/${dir}/.localized"
+done
+sudo rm /Applications/.localized
+
 # Change login shell to Homebrewed Zsh
 echo "$(/usr/local/bin/brew --prefix)/bin/zsh" | sudo tee -a /etc/shells
 chsh -s "$(/usr/local/bin/brew --prefix)/bin/zsh"
