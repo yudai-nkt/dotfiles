@@ -49,13 +49,13 @@ setopt interactive_comments
 setopt prompt_subst
 
 # display current directory on tab
-function pwd_info_on_tab() {
-  local pwd_shortened=$(pwd | awk -F / '{print $(NF-1)"/"$(NF)}')
-  echo -ne "\033]0;${pwd_shortened}\007"
+function show_path_on_tab() {
+  local path_shortened="${${PWD%/*}##*/}/${PWD##*/}"
+  echo -ne "\033]0;${path_shortened}\007"
 }
-pwd_info_on_tab
+show_path_on_tab
 function chpwd() {
-  pwd_info_on_tab
+  show_path_on_tab
 }
 
 # prompt
