@@ -99,18 +99,10 @@ function git_branch_status {
 }
 
 # command alias
-case ${OSTYPE} in
-  darwin*)
-    alias mkdir='mkdir -p'
-    alias ls='ls -G'
-    alias la='ls -A'
-    alias ll='ls -l'
-    alias lsdots='ls -ad .*'
-    alias uptex2pdf='ptex2pdf -u -l -ot "-file-line-error"'
-    ;;
-  linux*)
-    ;;
-esac
+alias mkdir='mkdir -p'
+alias ls='ls --color=auto'
+alias la='ls --almost-all'
+alias ll='ls -l --human-readable'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
