@@ -106,6 +106,9 @@ alias ll='ls -l --human-readable'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# added by travis gem
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+
 if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
   source ${ZPLUG_HOME}/init.zsh
 
@@ -117,6 +120,3 @@ if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
   fi
   zplug load
 fi
-
-# added by travis gem
-[ -f /Users/yudai-nkt/.travis/travis.sh ] && source /Users/yudai-nkt/.travis/travis.sh
