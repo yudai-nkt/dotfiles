@@ -29,6 +29,10 @@ export ZPLUG_REPOS=${XDG_DATA_HOME}/zplug
 export ZPLUG_LOADFILE=${XDG_CONFIG_HOME}/zplug/packages.zsh
 export ZPLUG_CACHE_DIR=${XDG_CACHE_HOME}/zplug
 
+# Homebrew
+export HOMEBREW_CACHE=${XDG_CACHE_HOME}/homebrew
+export HOMEBREW_LOGS=${XDG_CACHE_HOME}/homebrew/log
+
 export GIBO_BOILERPLATES=${XDG_DATA_HOME}/gibo
 
 export BREW_PREFIX=$(brew --prefix)
