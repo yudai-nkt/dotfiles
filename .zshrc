@@ -100,7 +100,7 @@ function git_branch_status {
 
 # command alias
 alias mkdir='mkdir -p'
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --classify --ignore=.DS_Store'
 alias la='ls --almost-all'
 alias ll='ls -l --human-readable'
 
