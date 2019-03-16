@@ -7,22 +7,22 @@ source ${DOTDIR}/script/lib/util.sh
 # xcode-select --install
 
 # Install Homebrew
-if is_available /usr/local/bin/brew; then
+if is_available brew; then
   echo "Homebrew is already installed."
   exit
 fi
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-if is_available /usr/local/bin/brew; then
-  /usr/local/bin/brew doctor
+if is_available brew; then
+  brew doctor
 else
   echo "Homebrew installation failed."
   exit 1
 fi
 
 # Install Homebrew formulae
-/usr/local/bin/brew bundle --file=${DOTDIR}/script/misc/Brewfile
+brew bundle --file=${DOTDIR}/script/misc/Brewfile
 
 # Install atom, apm, and Atom packages after Atom.app is successfully installed
 if [[ -d /Applications/Atom.app ]]; then
@@ -54,5 +54,5 @@ done
 sudo rm /Applications/.localized
 
 # Change login shell to Homebrewed Zsh
-echo "$(/usr/local/bin/brew --prefix)/bin/zsh" | sudo tee -a /etc/shells
-chsh -s "$(/usr/local/bin/brew --prefix)/bin/zsh"
+echo "$(brew --prefix)/bin/zsh" | sudo tee -a /etc/shells
+chsh -s "$(brew --prefix)/bin/zsh"
