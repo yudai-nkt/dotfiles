@@ -20,3 +20,8 @@ function is_available() {
   which "$1" >/dev/null 2>&1
   return $?
 }
+
+function abort() {
+  echo "$1"
+  exit 1
+}

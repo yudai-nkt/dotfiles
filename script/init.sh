@@ -17,8 +17,7 @@ fi
 if is_available brew; then
   brew doctor
 else
-  echo "Homebrew installation failed."
-  exit 1
+  abort "Homebrew installation failed."
 fi
 
 # Install Homebrew formulae
@@ -34,10 +33,16 @@ if [[ -d /Applications/Atom.app ]]; then
 
   # Install community packages
   ${ATOM_INSTALL_DIR}/apm install --packages-file ${DOTDIR}/script/misc/atom-packages
+else
+  abort "Atom installation failed."
 fi
 
 # Install Python 3 packages
-pip3 install --requirement ${DOTDIR}/script/misc/requirements.txt
+if is_available pip3; then
+  pip3 install --requirement ${DOTDIR}/script/misc/requirements.txt
+else
+  abort "Python 3 (and pip3) installation failed"
+fi
 
 # Install TeX Live
 curl -L http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | tar -xz
