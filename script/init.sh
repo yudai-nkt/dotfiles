@@ -36,6 +36,9 @@ if [[ -d /Applications/Atom.app ]]; then
   ${ATOM_INSTALL_DIR}/apm install --packages-file ${DOTDIR}/script/misc/atom-packages
 fi
 
+# Install Python 3 packages
+pip3 install --requirement ${DOTDIR}/script/misc/requirements.txt
+
 # Install TeX Live
 curl -L http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | tar -xz
 cd install-tl-20*
