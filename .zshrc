@@ -63,8 +63,7 @@ PROMPT='%(?.😊  %F{blue}%~%f
 %F{red}❯%f%F{yellow}❯%f%F{green}❯%f .😱  %F{blue}%~%f
 %F{red}❯%f%F{yellow}❯%f%F{green}❯%f )'
 
-SPROMPT='❓
-%F{red}Did you mean:%f %B%F{blue}%r%f%b [Yes, No, Abort, Edit]: '
+SPROMPT='%F{red}Did you mean:%f %B%F{blue}%r%f%b [Yes, No, Abort, Edit]: '
 
 RPROMPT='$(git_branch_status)'
 
