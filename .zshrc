@@ -90,7 +90,7 @@ function git_branch_status {
   result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
 
   if [[ $(git stash list) != "" ]]; then
-    result+="📝"
+    result+="📋"
   fi
 
   echo -e "$result"
