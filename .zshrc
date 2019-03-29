@@ -70,6 +70,9 @@ RPROMPT='$(git_branch_status)'
 # the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
 function git_branch_status {
   local branch st num_color result
+  typeset -A git_emojis=(
+    [stash]=$'\U1F4CB' # clipboard
+  )
 
   if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
     return
@@ -90,7 +93,7 @@ function git_branch_status {
   result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
 
   if [[ $(git stash list) != "" ]]; then
-    result+="📋"
+    result+="$git_emojis[stash]"
   fi
 
   echo -e "$result"
