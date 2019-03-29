@@ -90,7 +90,7 @@ function git_branch_status {
     num_color=226
   fi
 
-  result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}$is_stashed"
+  result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}"
 
   if [[ $(git stash list) != "" ]]; then
     result+="$git_emojis[stash]"
