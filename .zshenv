@@ -45,4 +45,5 @@ export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 export EDITOR=vim
+export PIPENV_VENV_IN_PROJECT=true
 setopt no_global_rcs
