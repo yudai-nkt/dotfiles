@@ -58,9 +58,12 @@ function chpwd() {
   show_path_on_tab
 }
 
+function precmd() {
+  [[ $? -eq 0 ]] && SPACESHIP_CHAR_SYMBOL='✓ ' || SPACESHIP_CHAR_SYMBOL='✗ '
+}
+
 # shell theme
 SPACESHIP_GOLANG_SHOW=false
-SPACESHIP_CHAR_SYMBOL='↳ '
 
 # command alias
 alias mkdir='mkdir -p'
