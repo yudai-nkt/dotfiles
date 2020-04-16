@@ -2,6 +2,7 @@
 typeset -U path manpath
 [ -x /usr/libexec/path_helper ] && eval $(/usr/libexec/path_helper -s)
 export path=(
+  $HOME/.poetry/bin(N-/)
   $HOME/.nodebrew/current/bin(N-/)
   $HOME/bin(N-/)
   /usr/local/opt/coreutils/libexec/gnubin(N-/)
@@ -45,4 +46,10 @@ export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 export EDITOR=vim
+export PIPENV_VENV_IN_PROJECT=true
+export PYENV_ROOT=${XDG_DATA_HOME}/pyenv
+
+# NPM
+export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME}/npm/config
+# export COOKIECUTTER_CONFIG=$XDG_CONFIG_HOME/cookiecutter/config.yaml
 setopt no_global_rcs
