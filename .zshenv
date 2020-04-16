@@ -49,4 +49,7 @@ export EDITOR=vim
 export PIPENV_VENV_IN_PROJECT=true
 export PYENV_ROOT=${XDG_DATA_HOME}/pyenv
 
+# NPM
+export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME}/npm/config
+# export COOKIECUTTER_CONFIG=$XDG_CONFIG_HOME/cookiecutter/config.yaml
 setopt no_global_rcs
