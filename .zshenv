@@ -47,4 +47,6 @@ export HISTSIZE=1000000
 export SAVEHIST=1000000
 export EDITOR=vim
 export PIPENV_VENV_IN_PROJECT=true
+export PYENV_ROOT=${XDG_DATA_HOME}/pyenv
+
 setopt no_global_rcs
