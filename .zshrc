@@ -58,46 +58,9 @@ function chpwd() {
   show_path_on_tab
 }
 
-# prompt
-PROMPT='%(?.%F{green}✓%f %F{blue}%~%f
-%F{red}❯%f%F{yellow}❯%f%F{green}❯%f .%F{red}✗%f %F{blue}%~%f
-%F{red}❯%f%F{yellow}❯%f%F{green}❯%f )'
-
-SPROMPT='%F{red}Did you mean:%f %B%F{blue}%r%f%b [Yes, No, Abort, Edit]: '
-
-RPROMPT='$(git_branch_status)'
-
-# the following function is based on http://d.hatena.ne.jp/uasi/20091017/1255712789.
-function git_branch_status {
-  local branch st num_color result
-  typeset -A git_emojis=(
-    [stash]=$'\U1F4CB' # clipboard
-  )
-
-  if [[ "$PWD" =~ '/\.git(/.*)?$' ]]; then
-    return
-  fi
-
-  branch="$(git symbolic-ref --short --quiet HEAD 2> /dev/null)"
-  if [[ -z $branch ]]; then
-    return
-  fi
-
-  st=$(git status 2> /dev/null)
-  if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-    num_color=82
-  else
-    num_color=226
-  fi
-
-  result="%{\e[38;5;${num_color}m%}$branch%{\e[m%}"
-
-  if [[ $(git stash list) != "" ]]; then
-    result+="$git_emojis[stash]"
-  fi
-
-  echo -e "$result"
-}
+# shell theme
+SPACESHIP_GOLANG_SHOW=false
+SPACESHIP_CHAR_SYMBOL='↳ '
 
 # command alias
 alias mkdir='mkdir -p'
