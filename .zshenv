@@ -17,6 +17,8 @@ export manpath=(
   /usr/local/opt/gnu-tar/libexec/gnuman(N-/)
   $manpath
 )
+# This append the system default MANPATH
+MANPATH=$MANPATH:
 
 # XDG Base Directory Specification
 export XDG_CONFIG_HOME=${HOME}/.config
