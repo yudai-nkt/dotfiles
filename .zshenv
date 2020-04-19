@@ -36,6 +36,10 @@ export ZPLUG_CACHE_DIR=${XDG_CACHE_HOME}/zplug
 export HOMEBREW_CACHE=${XDG_CACHE_HOME}/homebrew
 export HOMEBREW_LOGS=${XDG_CACHE_HOME}/homebrew/log
 
+# tealdeer
+export TEALDEER_CONFIG_DIR=${XDG_CONFIG_HOME}/tealdeer
+export TEALDEER_CACHE_DIR=${XDG_CACHE_HOME}/tealdeer
+
 export GIBO_BOILERPLATES=${XDG_DATA_HOME}/gibo
 
 export BREW_PREFIX=$(brew --prefix)
