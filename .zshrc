@@ -76,6 +76,8 @@ alias ll='ls -l --human-readable'
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
+[ -f "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ] && source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
   source ${ZPLUG_HOME}/init.zsh
 
