@@ -2,6 +2,7 @@
 typeset -U path manpath
 [ -x /usr/libexec/path_helper ] && eval $(/usr/libexec/path_helper -s)
 export path=(
+  $HOME/.cargo/bin(N-/)
   $HOME/.poetry/bin(N-/)
   $HOME/.nodebrew/current/bin(N-/)
   $HOME/bin(N-/)
