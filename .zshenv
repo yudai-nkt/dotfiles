@@ -4,6 +4,7 @@ typeset -U path manpath
 export path=(
   $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/)
   $HOME/.cargo/bin(N-/)
+  $HOME/.deno/bin(N-/)
   $HOME/.poetry/bin(N-/)
   $HOME/.nodebrew/current/bin(N-/)
   $HOME/bin(N-/)
@@ -60,4 +61,8 @@ export PYENV_ROOT=${XDG_DATA_HOME}/pyenv
 # NPM
 export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME}/npm/config
 # export COOKIECUTTER_CONFIG=$XDG_CONFIG_HOME/cookiecutter/config.yaml
+
+# Deno
+export DENO_DIR=${XDG_CACHE_HOME}/deno
+
 setopt no_global_rcs
