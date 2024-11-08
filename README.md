@@ -8,7 +8,6 @@ This repository shouldn't need further introduction thanks to the pretty self-ex
 ## Content
 This repository contains dotfiles of the following softwares:
 
-- [Atom][atom]
 - [EditorConfig][editorconfig]
 - [Git][git]
 - [Matplotlib][matplotlib]
@@ -34,7 +33,6 @@ The complete list of available targets and their purposes is detailed below.
 | `update` | Sync with the remote repository |
 
 <!--links-->
-[atom]: https://atom.io/
 [editorconfig]: http://editorconfig.org/
 [git]: https://git-scm.com/
 [matplotlib]: https://matplotlib.org/
