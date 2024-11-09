@@ -11,7 +11,6 @@ This repository contains dotfiles of the following softwares:
 - [EditorConfig][editorconfig]
 - [Git][git]
 - [Matplotlib][matplotlib]
-- [Latexmk][latexmk]
 - [Zsh][zsh]
 
 ## Usage
@@ -36,5 +35,4 @@ The complete list of available targets and their purposes is detailed below.
 [editorconfig]: http://editorconfig.org/
 [git]: https://git-scm.com/
 [matplotlib]: https://matplotlib.org/
-[latexmk]: https://www.ctan.org/pkg/latexmk
 [zsh]: http://zsh.sourceforge.net/

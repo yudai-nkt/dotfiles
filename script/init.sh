@@ -30,14 +30,6 @@ else
   abort "Python 3 (and pip3) installation failed"
 fi
 
-# Install TeX Live
-curl -L http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz | tar -xz
-cd install-tl-20*
-sudo ./install-tl --profile ${DOTDIR}/script/misc/texlive.profile
-sudo /usr/local/texlive/*/bin/x86_64-darwin/tlmgr path add
-cd ../
-rm -rf install-tl-20*
-
 # Show English directory names in Finder
 for dir in Desktop Documents Downloads Movies Music Pictures Public; do
   rm "${HOME}/${dir}/.localized"
