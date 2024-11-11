@@ -1,47 +1,47 @@
-tap 'homebrew/bundle'
-tap 'homebrew/cask-fonts'
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
 
 brew "actionlint"
-brew 'coreutils'
+brew "coreutils"
 brew "curl"
 brew "deno"
-brew 'ffmpeg'
-brew 'fzf'
+brew "ffmpeg"
+brew "fzf"
 brew "gcc"
 brew "gh"
-brew 'ghq'
-brew 'gibo'
-brew 'git'
-brew 'gnu-sed'
-brew 'gnu-tar'
-brew 'grep'
-brew 'go'
+brew "ghq"
+brew "gibo"
+brew "git"
+brew "gnu-sed"
+brew "gnu-tar"
+brew "grep"
+brew "go"
 brew "imagemagick"
 brew "jq"
-brew 'mas'
-brew 'nkf'
-brew 'python'
+brew "mas"
+brew "nkf"
+brew "python"
 brew "tealdeer"
-brew 'tree'
-brew 'vim', args: ['with-lua', 'with-luajit']
-brew 'wget'
-brew 'zplug'
-brew 'zsh', args: ['without-etcdir']
-brew 'zsh-completions'
+brew "tree"
+brew "vim", args: ["with-lua", "with-luajit"]
+brew "wget"
+brew "zplug"
+brew "zsh", args: ["without-etcdir"]
+brew "zsh-completions"
 brew "qmk/qmk/qmk"
 
-cask 'adobe-acrobat-reader'
+cask "adobe-acrobat-reader"
 cask "adoptopenjdk"
 cask "discord"
-cask 'dropbox'
+cask "dropbox"
 cask "fl-studio"
 cask "gcc-arm-embedded"
 cask "google-chrome"
 cask "inkscape"
-cask 'iterm2'
+cask "iterm2"
 cask "kicad"
 cask "qmk-toolbox"
 cask "spotify"
@@ -51,10 +51,10 @@ cask "visual-studio-code"
 cask "vivaldi"
 
 cask "font-source-code-pro-for-powerline"
-cask 'font-source-han-code-jp'
-cask 'font-inconsolata'
-cask 'font-noto-sans-cjk-jp'
-cask 'font-roboto'
+cask "font-source-han-code-jp"
+cask "font-inconsolata"
+cask "font-noto-sans-cjk-jp"
+cask "font-roboto"
 
 mas "Adobe Lightroom", id: 1451544217
 
