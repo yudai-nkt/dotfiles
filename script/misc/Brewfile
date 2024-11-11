@@ -1,9 +1,17 @@
 tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
+tap "osx-cross/arm"
+tap "osx-cross/avr"
+tap "qmk/qmk"
 
+brew "actionlint"
 brew 'coreutils'
+brew "curl"
+brew "deno"
 brew 'ffmpeg'
 brew 'fzf'
+brew "gcc"
+brew "gh"
 brew 'ghq'
 brew 'gibo'
 brew 'git'
@@ -11,29 +19,60 @@ brew 'gnu-sed'
 brew 'gnu-tar'
 brew 'grep'
 brew 'go'
-brew 'hub'
+brew "imagemagick"
+brew "jq"
 brew 'mas'
 brew 'nkf'
 brew 'python'
-brew 'tig'
+brew "tealdeer"
 brew 'tree'
 brew 'vim', args: ['with-lua', 'with-luajit']
 brew 'wget'
 brew 'zplug'
 brew 'zsh', args: ['without-etcdir']
 brew 'zsh-completions'
+brew "qmk/qmk/qmk"
 
 cask 'adobe-acrobat-reader'
+cask "adoptopenjdk"
+cask "discord"
 cask 'dropbox'
+cask "fl-studio"
+cask "gcc-arm-embedded"
+cask "google-chrome"
+cask "inkscape"
 cask 'iterm2'
-cask 'mendeley-desktop'
-cask 'spotify'
-cask 'vivaldi'
-cask 'xld'
+cask "kicad"
+cask "qmk-toolbox"
+cask "spotify"
+cask "thunderbird"
+cask "vial"
+cask "visual-studio-code"
+cask "vivaldi"
 
+cask "font-source-code-pro-for-powerline"
 cask 'font-source-han-code-jp'
 cask 'font-inconsolata'
 cask 'font-noto-sans-cjk-jp'
 cask 'font-roboto'
 
-mas 'Airmail 3', id: 918858936
+mas "Adobe Lightroom", id: 1451544217
+
+vscode "astro-build.astro-vscode"
+vscode "bierner.markdown-preview-github-styles"
+vscode "biomejs.biome"
+vscode "dbaeumer.vscode-eslint"
+vscode "denoland.vscode-deno"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
+vscode "katjanakosic.vscode-json5"
+vscode "llvm-vs-code-extensions.vscode-clangd"
+vscode "negokaz.zenn-editor"
+vscode "phoenisx.cssvar"
+vscode "rust-lang.rust-analyzer"
+vscode "svelte.svelte-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "tauri-apps.tauri-vscode"
+vscode "unifiedjs.vscode-mdx"
+vscode "wayou.vscode-todo-highlight"
+vscode "yummygum.city-lights-theme"
