@@ -47,7 +47,6 @@ export GIBO_BOILERPLATES=${XDG_DATA_HOME}/gibo
 
 export BREW_PREFIX=$(brew --prefix)
 export GOPATH=${HOME}
-export GHQ_ROOT=${GOPATH}/src
 export LANG=ja_JP.UTF-8
 export PAGER=less
 export LESS='--hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'

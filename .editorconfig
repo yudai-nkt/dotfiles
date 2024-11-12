@@ -14,6 +14,6 @@ trim_trailing_whitespace = false
 [*.rs]
 indent_size = 4
 
-[{.config/git/config,Makefile,*.go}]
+[{.config/git/{config,conf.d/*},Makefile,*.go}]
 indent_style = tab
 indent_size = 4
