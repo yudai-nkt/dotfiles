@@ -27,6 +27,7 @@ MANPATH=$MANPATH:
 export XDG_CONFIG_HOME=${HOME}/.config
 export XDG_CACHE_HOME=${HOME}/.cache
 export XDG_DATA_HOME=${HOME}/.local/share
+export XDG_STATE_HOME=${HOME}/.local/state
 
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
@@ -37,7 +38,7 @@ export ZPLUG_CACHE_DIR=${XDG_CACHE_HOME}/zplug
 
 # Homebrew
 export HOMEBREW_CACHE=${XDG_CACHE_HOME}/homebrew
-export HOMEBREW_LOGS=${XDG_CACHE_HOME}/homebrew/log
+export HOMEBREW_LOGS=${XDG_STATE_HOME}/homebrew/log
 
 # tealdeer
 export TEALDEER_CONFIG_DIR=${XDG_CONFIG_HOME}/tealdeer
@@ -50,14 +51,15 @@ export GOPATH=${HOME}
 export LANG=ja_JP.UTF-8
 export PAGER=less
 export LESS='--hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
-export HISTFILE=$HOME/.zsh_history
+export HISTFILE=${XDG_STATE_HOME}/zsh/history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 export EDITOR=vim
 export PIPENV_VENV_IN_PROJECT=true
 export PYENV_ROOT=${XDG_DATA_HOME}/pyenv
 
-# NPM
+# Node and npm
+export NODE_REPL_HISTORY=${XDG_STATE_HOME}/node/history
 export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME}/npm/config
 # export COOKIECUTTER_CONFIG=$XDG_CONFIG_HOME/cookiecutter/config.yaml
 
