@@ -2,6 +2,7 @@
 typeset -U path manpath
 [ -x /usr/libexec/path_helper ] && eval $(/usr/libexec/path_helper -s)
 export path=(
+  $(aqua root-dir)/bin(N-/)
   $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/)
   $HOME/.cargo/bin(N-/)
   $HOME/.deno/bin(N-/)
@@ -39,6 +40,9 @@ export ZPLUG_CACHE_DIR=${XDG_CACHE_HOME}/zplug
 # Homebrew
 export HOMEBREW_CACHE=${XDG_CACHE_HOME}/homebrew
 export HOMEBREW_LOGS=${XDG_STATE_HOME}/homebrew/log
+
+# Aqua
+export AQUA_GLOBAL_CONFIG=${XDG_CONFIG_HOME}/aquaproj-aqua/aqua.yaml
 
 # tealdeer
 export TEALDEER_CONFIG_DIR=${XDG_CONFIG_HOME}/tealdeer

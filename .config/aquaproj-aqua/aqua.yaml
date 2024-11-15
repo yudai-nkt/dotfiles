@@ -1,0 +1,39 @@
+---
+# aqua - Declarative CLI Version Manager
+# https://aquaproj.github.io/
+# checksum:
+#   enabled: true
+#   require_checksum: true
+#   supported_envs:
+#   - all
+registries:
+- type: standard
+  ref: v4.251.0 # renovate: depName=aquaproj/aqua-registry
+packages:
+- name: rossmacarthur/sheldon@0.7.4 # TODO: update to 0.8.0 in ARM Mac
+  description: ":bowtie: Fast, configurable, shell plugin manager"
+  link: https://github.com/rossmacarthur/sheldon
+- name: starship/starship@v1.21.1
+  description: The minimal, blazing-fast, and infinitely customizable prompt for any shell
+  link: https://github.com/starship/starship
+- name: rhysd/actionlint@v1.7.4
+  description: Static checker for GitHub Actions workflow files
+  link: https://github.com/rhysd/actionlint
+- name: denoland/deno@v2.0.6
+  description: A modern runtime for JavaScript and TypeScript
+  link: https://github.com/denoland/deno
+- name: junegunn/fzf@v0.56.3
+  description: ":cherry_blossom: A command-line fuzzy finder"
+  link: https://github.com/junegunn/fzf
+- name: cli/cli@v2.62.0
+  description: GitHub’s official command line tool
+  link: https://github.com/cli/cli
+- name: x-motemen/ghq@v1.7.1
+  description: Remote repository management made easy
+  link: https://github.com/x-motemen/ghq
+- name: jqlang/jq@jq-1.7.1
+  description: Command-line JSON processor
+  link: https://github.com/jqlang/jq
+- name: tealdeer-rs/tealdeer@v1.7.1
+  description: A very fast implementation of tldr in Rust
+  link: https://github.com/tealdeer-rs/tealdeer
