@@ -1,2 +1,15 @@
+[templates]
+defer = """{% for file in files %}
+zsh-defer source "{{ file }}"
+{% endfor %}"""
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
 [plugins.enhancd]
 github = "babarot/enhancd"
+
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+tag = "0.35.0"
+apply = ["defer"]
