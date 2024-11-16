@@ -71,6 +71,7 @@ alias ll='ls -l --human-readable'
 
 [ -f "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ] && source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
+eval "$(atuin init zsh)"
 # this goes against aqua's best practice, but I'll see how it works (or not).
 # cf. https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/tips
 eval "$(mise activate zsh)"
