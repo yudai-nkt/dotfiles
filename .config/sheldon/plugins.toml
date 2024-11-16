@@ -6,8 +6,22 @@ zsh-defer source "{{ file }}"
 [plugins.zsh-defer]
 github = "romkatv/zsh-defer"
 
+[plugins.autopair]
+github = "hlissner/zsh-autopair"
+use = ["{{ name }}.zsh"]
+apply = ["defer"]
+
 [plugins.enhancd]
 github = "babarot/enhancd"
+
+[plugins.fzf-tab-source]
+github = "Freed-Wu/fzf-tab-source"
+apply = ["defer"]
+
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
+tag = "v1.1.2"
+apply = ["defer"]
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
