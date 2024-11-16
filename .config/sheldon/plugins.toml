@@ -13,6 +13,7 @@ apply = ["defer"]
 
 [plugins.enhancd]
 github = "babarot/enhancd"
+apply = ["defer"]
 
 [plugins.fzf-tab-source]
 github = "Freed-Wu/fzf-tab-source"
