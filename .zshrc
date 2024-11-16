@@ -83,4 +83,7 @@ if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
   zplug load
 fi
 
+# this goes against aqua's best practice, but I'll see how it works (or not).
+# cf. https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/tips
+eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
