@@ -23,13 +23,6 @@ fi
 # Install Homebrew formulae
 brew bundle --file=${DOTDIR}/script/misc/Brewfile
 
-# Install Python 3 packages
-if is_available pip3; then
-  pip3 install --requirement ${DOTDIR}/script/misc/requirements.txt
-else
-  abort "Python 3 (and pip3) installation failed"
-fi
-
 # Show English directory names in Finder
 for dir in Desktop Documents Downloads Movies Music Pictures Public; do
   rm "${HOME}/${dir}/.localized"

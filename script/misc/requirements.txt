@@ -1,5 +1,0 @@
-folium
-matplotlib
-numpy
-pandas
-jupyterlab

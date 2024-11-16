@@ -1,5 +1,0 @@
-default_context:
-  full_name: "Yudai Nakata"
-  email: "yudai.nkt@gmail.com"
-  github_username: "yudai-nkt"
-cookiecutters_dir: "$GHQ_ROOT/github.com/yudai-nkt"
