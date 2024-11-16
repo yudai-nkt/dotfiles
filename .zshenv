@@ -30,13 +30,6 @@ export XDG_CACHE_HOME=${HOME}/.cache
 export XDG_DATA_HOME=${HOME}/.local/share
 export XDG_STATE_HOME=${HOME}/.local/state
 
-# zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
-export ZPLUG_BIN=${HOME}/bin
-export ZPLUG_REPOS=${XDG_DATA_HOME}/zplug
-export ZPLUG_LOADFILE=${XDG_CONFIG_HOME}/zplug/packages.zsh
-export ZPLUG_CACHE_DIR=${XDG_CACHE_HOME}/zplug
-
 # Homebrew
 export HOMEBREW_CACHE=${XDG_CACHE_HOME}/homebrew
 export HOMEBREW_LOGS=${XDG_STATE_HOME}/homebrew/log

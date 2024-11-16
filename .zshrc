@@ -71,19 +71,8 @@ alias ll='ls -l --human-readable'
 
 [ -f "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ] && source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
-  source ${ZPLUG_HOME}/init.zsh
-
-  if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-      echo; zplug install
-    fi
-  fi
-  zplug load
-fi
-
 # this goes against aqua's best practice, but I'll see how it works (or not).
 # cf. https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/tips
 eval "$(mise activate zsh)"
+eval "$(sheldon source)"
 eval "$(starship init zsh)"
