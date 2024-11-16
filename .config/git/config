@@ -7,6 +7,7 @@
 	autocrlf = input
 	ignorecase = false
 	editor = vim
+	pager = delta
 [alias]
 	graph = log --graph --pretty=format:'%C(red)%h%C(reset):%C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset)' --date-order
 	st = status -sb
@@ -14,9 +15,15 @@
 	rm-idx = rm --cached
 [merge]
 	ff = false
+	conflictStyle = zdiff3
 [pull]
 	ff = only
 [init]
 	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
 [include]
+	path = conf.d/delta
 	path = conf.d/ghq

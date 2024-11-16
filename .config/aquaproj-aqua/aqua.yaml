@@ -43,3 +43,6 @@ packages:
 - name: atuinsh/atuin@v18.3.0
   description: Magical shell history
   link: https://github.com/atuinsh/atuin
+- name: dandavison/delta@0.18.2
+  description: A syntax-highlighting pager for git, diff, and grep output
+  link: https://github.com/dandavison/delta
