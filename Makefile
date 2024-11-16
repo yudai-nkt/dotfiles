@@ -1,5 +1,5 @@
 DOTDIR := $(PWD)
-EXCLUDES := .gitignore Makefile $(wildcard *.md) $(shell find script -type f)
+EXCLUDES := .gitignore Makefile $(wildcard *.md) $(shell find script -type f) vscode/settings.json
 DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-files))
 
 list:
