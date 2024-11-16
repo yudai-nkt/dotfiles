@@ -1,0 +1,37 @@
+{
+    "$schema": "vscode://schemas/settings/user",
+    "editor.fontFamily": "'Source Han Code JP', monospace",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.scrollBeyondLastLine": false,
+    "workbench.list.openMode": "doubleClick",
+    "python.showStartPage": false,
+    "python.venvPath": "./venv",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "chronicler.ffmpeg-binary": "ffmpeg",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorTheme": "City Lights",
+    "explorer.autoReveal": "focusNoScroll",
+    "editor.inlayHints.enabled": false,
+    "svelte.enable-ts-plugin": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "markdown-preview-github-styles.colorTheme": "light",
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "cssVariables.blacklistFolders": [
+      "**/.git",
+      "**/.svn",
+      "**/.hg",
+      "**/CVS",
+      "**/.DS_Store",
+      "**/node_modules",
+      "**/bower_components",
+      "**/tmp",
+      "**/dist",
+      "**/tests"
+    ],
+    "biome.requireConfigFile": true
+}
