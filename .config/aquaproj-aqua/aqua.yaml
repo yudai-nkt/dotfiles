@@ -46,3 +46,6 @@ packages:
 - name: dandavison/delta@0.18.2
   description: A syntax-highlighting pager for git, diff, and grep output
   link: https://github.com/dandavison/delta
+- name: sharkdp/bat@v0.24.0
+  description: A cat(1) clone with wings
+  link: https://github.com/sharkdp/bat
