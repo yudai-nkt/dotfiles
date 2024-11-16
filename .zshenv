@@ -70,4 +70,8 @@ export NPM_CONFIG_USERCONFIG=${XDG_CONFIG_HOME}/npm/config
 # Deno
 export DENO_DIR=${XDG_CACHE_HOME}/deno
 
+# Starship
+export STARSHIP_CONFIG=${XDG_CONFIG_HOME}/starship/config.toml
+export STARSHIP_CACHE=${XDG_STATE_HOME}/starship
+
 setopt no_global_rcs

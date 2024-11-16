@@ -58,13 +58,6 @@ function chpwd() {
   show_path_on_tab
 }
 
-function precmd() {
-  [[ $? -eq 0 ]] && SPACESHIP_CHAR_SYMBOL='✓ ' || SPACESHIP_CHAR_SYMBOL='✗ '
-}
-
-# shell theme
-SPACESHIP_GOLANG_SHOW=false
-
 # command alias
 alias mkdir='mkdir -p'
 alias ls='ls --color=auto --classify --ignore=.DS_Store'
@@ -89,3 +82,5 @@ if [[ -f ${ZPLUG_HOME}/init.zsh ]]; then
   fi
   zplug load
 fi
+
+eval "$(starship init zsh)"
