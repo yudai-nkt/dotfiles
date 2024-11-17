@@ -1,3 +1,5 @@
+shell = "zsh"
+
 [templates]
 defer = """{% for file in files %}
 zsh-defer source "{{ file }}"
