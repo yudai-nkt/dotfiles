@@ -1,6 +1,6 @@
 DOTDIR := $(PWD)
-EXCLUDES := .gitignore Makefile $(wildcard *.md) $(shell find script -type f) vscode/settings.json
-DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-files))
+EXCLUDES := .gitignore Makefile $(wildcard *.md) script vscode
+DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-tree --name-only HEAD))
 
 list:
 	@echo 'Dotfiles to be deployed are as follows.'
