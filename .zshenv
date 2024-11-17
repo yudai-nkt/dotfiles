@@ -2,6 +2,10 @@
 typeset -U path manpath
 [ -x /usr/libexec/path_helper ] && eval $(/usr/libexec/path_helper -s)
 export path=(
+  /opt/homebrew/bin(N-/)
+  $path
+)
+path=(
   $(aqua root-dir)/bin(N-/)
   $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/)
   $HOME/.cargo/bin(N-/)

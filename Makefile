@@ -8,7 +8,7 @@ list:
 
 init:
 	@echo 'Initialize this computer.'
-	@DOTDIR=$(DOTDIR) bash $(DOTDIR)/script/init.sh
+	@DOTDIR=$(DOTDIR) PATH=/opt/homebrew/bin:$${PATH} bash $(DOTDIR)/script/init.sh
 
 symlink:
 	@echo 'Symlink dotfiles into home directory.'
