@@ -1,0 +1,3 @@
+[gh/config.yml]
+# `gh alias set` command uses 4-space indent.
+indent_size = 4
