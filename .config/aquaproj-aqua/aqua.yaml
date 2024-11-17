@@ -10,7 +10,7 @@ registries:
 - type: standard
   ref: v4.251.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: rossmacarthur/sheldon@0.7.4 # TODO: update to 0.8.0 in ARM Mac
+- name: rossmacarthur/sheldon@0.8.0
   description: ":bowtie: Fast, configurable, shell plugin manager"
   link: https://github.com/rossmacarthur/sheldon
 - name: starship/starship@v1.21.1
