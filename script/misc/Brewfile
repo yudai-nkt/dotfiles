@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
