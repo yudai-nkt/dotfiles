@@ -11,7 +11,7 @@
     },
     "chronicler.ffmpeg-binary": "ffmpeg",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "City Lights",
+    "workbench.colorTheme": "Catppuccin Frappé",
     "explorer.autoReveal": "focusNoScroll",
     "editor.inlayHints.enabled": false,
     "svelte.enable-ts-plugin": true,
@@ -34,5 +34,7 @@
       "**/tests"
     ],
     "biome.requireConfigFile": true,
+    "catppuccin.accentColor": "sapphire",
+    "workbench.iconTheme": "catppuccin-frappe",
     "editor.fontSize": 14
 }
