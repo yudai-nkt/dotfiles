@@ -43,8 +43,8 @@ cask "vivaldi"
 cask "wezterm"
 
 cask "font-source-code-pro-for-powerline"
-cask "font-source-han-code-jp"
 cask "font-inconsolata"
+casl "font-monaspace-nerd-font"
 cask "font-noto-sans-cjk-jp"
 cask "font-roboto"
 
