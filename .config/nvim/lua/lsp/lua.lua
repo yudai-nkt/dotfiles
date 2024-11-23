@@ -3,6 +3,6 @@ if vim.fn.exepath("lua-language-server") ~= "" then
 else
   vim.notify(
     "Lua Language Server is not installed",
-    vim.log.levels.warn
+    vim.log.levels.WARN,
   )
 end
