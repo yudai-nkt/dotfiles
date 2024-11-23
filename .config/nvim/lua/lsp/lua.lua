@@ -4,5 +4,8 @@ else
   vim.notify(
     "Lua Language Server is not installed",
     vim.log.levels.WARN,
+    {
+      title = "dotfiles"
+    }
   )
 end
