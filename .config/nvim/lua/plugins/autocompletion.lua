@@ -1,3 +1,4 @@
+--- @type LazyPluginSpec | LazyPluginSpec[]
 return {
   {
     "hrsh7th/nvim-cmp",
