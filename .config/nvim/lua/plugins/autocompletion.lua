@@ -6,6 +6,8 @@ return {
       "hrsh7th/cmp-nvim-lsp"
     },
     event = { "InsertEnter", "CmdlineEnter" },
+    --- @module 'cmp'
+    --- @param opts cmp.ConfigSchema
     opts = function(_, opts)
       local cmp = require("cmp")
 
