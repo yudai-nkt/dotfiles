@@ -1,3 +1,4 @@
+--- @module "lazy.types"
 --- @type LazyPluginSpec | LazyPluginSpec[]
 return {
   -- Since vim.api.nvim_get_runtime_file does not look for
@@ -5,12 +6,5 @@ return {
   -- introduced instead of enumerating plugin entries using
   -- require("lazy").plugins().
   "folke/lazydev.nvim",
-  opts = {
-    library = {
-      {
-        path = "lazy.nvim",
-        words = { "LazyPluginSpec" },
-      }
-    },
-  },
+  opts = {},
 }
