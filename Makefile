@@ -1,5 +1,5 @@
 DOTDIR := $(PWD)
-EXCLUDES := .gitignore Makefile $(wildcard *.md) script vscode
+EXCLUDES := .gitignore Makefile $(wildcard *.md) script vscode aqua.yaml
 DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-tree --name-only HEAD))
 
 list:
