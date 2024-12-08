@@ -5,6 +5,7 @@ export path=(
   /opt/homebrew/bin(N-/)
   $path
 )
+export BREW_PREFIX=$(brew --prefix)
 path=(
   $(aqua root-dir)/bin(N-/)
   $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/)
@@ -13,16 +14,16 @@ path=(
   $HOME/.poetry/bin(N-/)
   $HOME/.nodebrew/current/bin(N-/)
   $HOME/bin(N-/)
-  /usr/local/opt/coreutils/libexec/gnubin(N-/)
-  /usr/local/opt/gnu-sed/libexec/gnubin(N-/)
-  /usr/local/opt/gnu-tar/libexec/gnubin(N-/)
+  $BREW_PREFIX/opt/coreutils/libexec/gnubin(N-/)
+  $BREW_PREFIX/opt/gnu-sed/libexec/gnubin(N-/)
+  $BREW_PREFIX/opt/gnu-tar/libexec/gnubin(N-/)
   /usr/local/bin(N-/)
   $path
 )
 export manpath=(
-  /usr/local/opt/coreutils/libexec/gnuman(N-/)
-  /usr/local/opt/gnu-sed/libexec/gnuman(N-/)
-  /usr/local/opt/gnu-tar/libexec/gnuman(N-/)
+  $BREW_PREFIX/opt/coreutils/libexec/gnuman(N-/)
+  $BREW_PREFIX/opt/gnu-sed/libexec/gnuman(N-/)
+  $BREW_PREFIX/opt/gnu-tar/libexec/gnuman(N-/)
   $manpath
 )
 # This append the system default MANPATH
@@ -47,7 +48,6 @@ export TEALDEER_CACHE_DIR=${XDG_CACHE_HOME}/tealdeer
 
 export GIBO_BOILERPLATES=${XDG_DATA_HOME}/gibo
 
-export BREW_PREFIX=$(brew --prefix)
 export GOPATH=${HOME}
 export LANG=ja_JP.UTF-8
 export PAGER=less
