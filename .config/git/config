@@ -3,6 +3,8 @@
 	email = yudai.nkt@gmail.com
 [color]
 	ui = auto
+[commit]
+	verbose = true
 [core]
 	autocrlf = input
 	ignorecase = false
