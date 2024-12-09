@@ -1,0 +1,2 @@
+short:-g	long:--ghq-mine	desc:List ghq-managed directories (excl. the ones you don't own)	func:ghq list --full-path $(git config ghq.user)	condition:which ghq
+short:-G	long:--ghq-all	desc:List all ghq-managed directories	func:ghq list --full-path	condition:which ghq
