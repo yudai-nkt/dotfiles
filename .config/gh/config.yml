@@ -1,7 +1,13 @@
 version: "1"
 aliases:
     ignore: '!gh api /gitignore/templates/$1 --jq .source | bat --language=gitignore --style=plain'
-    create: repo create
     clone: repo clone
     fork: repo fork
     browse: repo view --web
+    new: |
+        !fzf << EOF | xargs -o --verbose -Isubcommand gh subcommand create
+        issue
+        pr
+        release
+        repo
+        EOF
