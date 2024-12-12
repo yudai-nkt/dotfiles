@@ -5,9 +5,10 @@ aliases:
     fork: repo fork
     browse: repo view --web
     new: |
-        !fzf << EOF | xargs -o --verbose -Isubcommand gh subcommand create
+        !fzf << EOF |
         issue
         pr
         release
         repo
         EOF
+        xargs -o --verbose -Isubcommand gh subcommand create
