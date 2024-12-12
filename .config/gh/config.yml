@@ -11,4 +11,4 @@ aliases:
         release
         repo
         EOF
-        xargs -o --verbose -Isubcommand gh subcommand create
+        xargs -o --verbose -Icommand gh command create
