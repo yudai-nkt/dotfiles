@@ -1,7 +1,10 @@
 version: "1"
 aliases:
     ignore: '!gh api /gitignore/templates/$1 --jq .source | bat --language=gitignore --style=plain'
-    clone: repo clone
+    clone: |
+        !gh repo list --json nameWithOwner,updatedAt --jq 'sort_by(.updatedAt) | reverse | .[].nameWithOwner' |
+        fzf |
+        ghq get
     fork: repo fork
     browse: repo view --web
     new: |
