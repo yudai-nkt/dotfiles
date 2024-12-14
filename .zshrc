@@ -74,6 +74,8 @@ export FZF_DEFAULT_OPTS=$(cat << EOF
 EOF
 )
 
+export ENHANCD_FILTER="fzf --preview 'tree -C -L 1 -a -I .git -I .DS_Store {}'"
+
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
 
