@@ -71,4 +71,7 @@ export DENO_DIR=${XDG_CACHE_HOME}/deno
 export STARSHIP_CONFIG=${XDG_CONFIG_HOME}/starship/config.toml
 export STARSHIP_CACHE=${XDG_STATE_HOME}/starship
 
+# GPG signing (cf. https://stackoverflow.com/a/57591830)
+export GPG_TTY=${TTY}
+
 setopt no_global_rcs
