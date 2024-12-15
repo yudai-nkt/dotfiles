@@ -10,6 +10,6 @@ registries:
 - type: standard
   ref: v4.269.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: JohnnyMorganz/StyLua@v2.0.1
+- name: JohnnyMorganz/StyLua@v2.0.2
   description: An opinionated Lua code formatter
   link: https://github.com/JohnnyMorganz/StyLua
