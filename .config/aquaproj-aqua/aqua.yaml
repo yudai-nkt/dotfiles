@@ -46,12 +46,12 @@ packages:
 - name: dandavison/delta@0.18.2
   description: A syntax-highlighting pager for git, diff, and grep output
   link: https://github.com/dandavison/delta
-- name: sharkdp/bat@v0.24.0
-  description: A cat(1) clone with wings
-  link: https://github.com/sharkdp/bat
 - name: neovim/neovim@v0.10.2
   description: Vim-fork focused on extensibility and usability
   link: https://github.com/neovim/neovim
 - name: LuaLS/lua-language-server@3.13.4
   description: A language server that offers Lua language support - programmed in Lua
   link: https://github.com/LuaLS/lua-language-server
+- name: crates.io/bat@0.24.0
+  description: A cat(1) clone with wings
+  link: https://github.com/sharkdp/bat
