@@ -2,5 +2,8 @@
   "extends": [
     "github>aquaproj/aqua-renovate-config#2.6.0"
   ],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "mise": {
+    "enabled": false
+  }
 }
