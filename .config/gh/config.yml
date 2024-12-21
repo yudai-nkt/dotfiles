@@ -3,7 +3,7 @@ aliases:
     ignore: |
         !gh repo gitignore list |
         tail --lines=+2 |
-        fzf --multi --preview='gh repo gitignore view {} | bat --force-colorization --language=gitignore' --prompt='Select .gitignore template(s): ' --query=$1 |
+        fzf --multi --preview='gh repo gitignore view {} | bat --color=always --language=gitignore --style=numbers' --prompt='Select .gitignore template(s): ' --query=$1 |
         xargs --max-args=1 gh repo gitignore view |
         bat --language=gitignore --style=plain --paging=never
     clone: |
