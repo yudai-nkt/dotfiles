@@ -13,7 +13,7 @@ aliases:
     fork: repo fork
     browse: repo view --web
     new: |
-        !fzf << EOF |
+        !fzf --preview='gh help {} create' --preview-window=right,80%,wrap << EOF |
         issue
         pr
         release
