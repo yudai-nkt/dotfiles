@@ -5,7 +5,7 @@ aliases:
         tail --lines=+2 |
         fzf --multi --preview='gh repo gitignore view {} | bat --force-colorization --language=gitignore' --prompt='Select .gitignore template(s): ' --query=$1 |
         xargs --max-args=1 gh repo gitignore view |
-        bat --language=gitignore --style=plain
+        bat --language=gitignore --style=plain --paging=never
     clone: |
         !gh repo list --json nameWithOwner,updatedAt --jq 'sort_by(.updatedAt) | reverse | .[].nameWithOwner' |
         fzf |
