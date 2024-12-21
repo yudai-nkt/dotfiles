@@ -52,6 +52,7 @@ export GOPATH=${HOME}
 export LANG=ja_JP.UTF-8
 export PAGER=less
 export LESS='--hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS'
+export MANPAGER="sh -c 'col -bx | bat --language=man --plain'"
 export HISTFILE=${XDG_STATE_HOME}/zsh/history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
