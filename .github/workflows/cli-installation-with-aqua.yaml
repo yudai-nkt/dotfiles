@@ -1,0 +1,26 @@
+name: CLI installation with aqua
+on:
+  push:
+    paths:
+      - aqua.yaml
+defaults:
+  run:
+    shell: bash
+jobs:
+  cli-installation-with-aqua:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquaproj/aqua-installer@v3.0.1
+        with:
+          aqua_version: v2.37.2
+          aqua_opts: --all
+        env:
+          AQUA_GLOBAL_CONFIG: .config/aquaproj-aqua/aqua.yaml
+          AQUA_LOG_COLOR: always
+      - name: Confirm if the installed commands run as expected
+        # Confirming each and every feature of all the commands is nearly
+        # impossible, so we just check if the installed commands can be run
+        # with --version option at the very least (all the commands installed
+        # with aqua have this option at the moment).
+        run: for cmd in $(ls $(aqua root-dir)/bin); do $cmd --version; done
