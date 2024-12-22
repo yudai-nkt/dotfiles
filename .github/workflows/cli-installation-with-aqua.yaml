@@ -2,7 +2,7 @@ name: CLI installation with aqua
 on:
   push:
     paths:
-      - aqua.yaml
+      - '**/aqua.yaml'
 defaults:
   run:
     shell: bash
