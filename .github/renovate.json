@@ -9,9 +9,10 @@
       "matchPackageNames": ["aquaproj/*"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
+    },
+    {
+      "matchManagers": ["mise"],
+      "enabled": false
     }
-  ],
-  "mise": {
-    "enabled": false
-  }
+  ]
 }
