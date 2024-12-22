@@ -6,7 +6,7 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchPackageNames": ["aquaproj/*"],
+      "matchDepNames": ["aquaproj/aqua*"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
