@@ -4,6 +4,13 @@
     "github>aquaproj/aqua-renovate-config#2.6.0"
   ],
   "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchPackageNames": ["aquaproj/*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ],
   "mise": {
     "enabled": false
   }
