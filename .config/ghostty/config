@@ -1,0 +1,4 @@
+font-family = "MonaspiceNe Nerd Font Mono"
+theme = catppuccin-frappe
+background-opacity = 0.8
+background-blur-radius = 20
