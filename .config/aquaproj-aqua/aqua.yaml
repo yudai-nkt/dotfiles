@@ -40,7 +40,7 @@ packages:
 - name: jdx/mise@v2024.12.20
   description: dev tools, env vars, task runner
   link: https://github.com/jdx/mise
-- name: atuinsh/atuin@v18.3.0
+- name: atuinsh/atuin@v18.4.0
   description: Magical shell history
   link: https://github.com/atuinsh/atuin
 - name: dandavison/delta@0.18.2
