@@ -1,0 +1,25 @@
+name: Setup fresh machine
+on:
+  push:
+    paths:
+      - 'script/**'
+      - Makefile
+  schedule:
+    - cron: '42 15 * * 4'
+defaults:
+  run:
+    shell: bash
+jobs:
+  setup-fresh-machine:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Uninstall built-in Homebrew
+        run: |
+          BREW_PREFIX="$(brew --prefix)"
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+          rm -rf $BREW_PREFIX
+        env:
+          NONINTERACTIVE: 1
+      - name: Run setup command
+        run: make install

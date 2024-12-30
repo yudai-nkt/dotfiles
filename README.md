@@ -5,6 +5,14 @@ My dotfiles and setup scripts
 ## Overview
 This repository shouldn't need further introduction thanks to the pretty self-explanatory name.
 
+## Supported Platforms
+
+Setup scripts are tested on GitHub Actions weekly and whenever changes in
+relevant files are committed to the main branch.
+The test runs on the following runners.
+
+- `macos-latest`
+
 ## Content
 This repository contains dotfiles of the following softwares:
 

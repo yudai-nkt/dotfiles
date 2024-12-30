@@ -18,5 +18,5 @@ update:
 	@echo 'Update this repository.'
 	git pull origin master
 
-install: update symlink init
+install: symlink init
 	@exec $${SHELL} --login
