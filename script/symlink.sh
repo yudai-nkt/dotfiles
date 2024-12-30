@@ -10,5 +10,6 @@ for file in ${dotfiles}; do
 done
 
 if is_macos; then
+  mkdir -p "$HOME/Library/Application Support/Code/User"
   ln -sfnv ${DOTDIR}/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 fi
