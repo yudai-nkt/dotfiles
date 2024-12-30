@@ -1,6 +1,6 @@
 DOTDIR := $(PWD)
-EXCLUDES := .gitignore Makefile $(wildcard *.md) script vscode aqua.yaml .stylua.toml
-DOTFILES := $(filter-out $(EXCLUDES), $(shell git ls-tree --name-only HEAD))
+EXCLUDES := .github .gitignore .stylua.toml
+DOTFILES := $(filter-out $(EXCLUDES), $(filter .%, $(shell git ls-tree --name-only HEAD)))
 
 list:
 	@echo 'Dotfiles to be deployed are as follows.'
