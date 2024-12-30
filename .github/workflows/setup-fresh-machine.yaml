@@ -2,6 +2,7 @@ name: Setup fresh machine
 on:
   push:
     paths:
+      - '.github/workflows/setup-fresh-machine.yaml'
       - 'script/**'
       - Makefile
   schedule:
