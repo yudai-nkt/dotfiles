@@ -26,7 +26,8 @@ Just clone the repository and run `make install`.
 
 ```zsh
 git clone git@github.com:yudai-nkt/dotfiles.git
-cd ./dotfiles && make install
+cd ./dotfiles
+make setup
 ```
 
 Make is employed as deployment tool.

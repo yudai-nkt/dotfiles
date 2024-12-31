@@ -19,4 +19,10 @@ update:
 	git pull origin master
 
 install: symlink init
+
+login:
+	@echo "$(brew --prefix)/bin/zsh" | sudo tee -a /etc/shells
+	@chsh -s "$(brew --prefix)/bin/zsh"
 	@exec $${SHELL} --login
+
+setup: install login

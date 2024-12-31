@@ -22,5 +22,5 @@ jobs:
           sudo rm -rf $BREW_PREFIX
         env:
           NONINTERACTIVE: 1
-      - name: Run setup command
+      - name: Run install command
         run: make install

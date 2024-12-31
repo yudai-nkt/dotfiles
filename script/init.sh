@@ -32,7 +32,3 @@ for dir in Desktop Documents Downloads Movies Music Pictures Public; do
   rm "${HOME}/${dir}/.localized"
 done
 sudo rm /Applications/.localized
-
-# Change login shell to Homebrewed Zsh
-echo "$(brew --prefix)/bin/zsh" | sudo tee -a /etc/shells
-chsh -s "$(brew --prefix)/bin/zsh"
