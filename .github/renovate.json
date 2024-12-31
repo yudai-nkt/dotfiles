@@ -13,6 +13,10 @@
       "automerge": true
     },
     {
+      "matchPackageNames": ["aquaproj/aqua"],
+      "addLabels": ["aqua"]
+    },
+    {
       "matchManagers": ["mise"],
       "enabled": false
     }
