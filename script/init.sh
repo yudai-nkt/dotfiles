@@ -32,3 +32,5 @@ for dir in Desktop Documents Downloads Movies Music Pictures Public; do
   rm "${HOME}/${dir}/.localized"
 done
 sudo rm /Applications/.localized
+
+aqua install --all --only-link
