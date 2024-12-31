@@ -4,10 +4,12 @@
     "github>aquaproj/aqua-renovate-config#2.6.0"
   ],
   "dependencyDashboard": true,
+  "labels": ["renovate"],
   "packageRules": [
     {
       "matchFileNames": ["**/aqua.yaml"],
       "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["aqua"],
       "automerge": true
     },
     {
