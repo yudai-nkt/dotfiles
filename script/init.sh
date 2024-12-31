@@ -21,7 +21,7 @@ else
 fi
 
 # Install Homebrew formulae
-brew bundle --file=${DOTDIR}/script/misc/Brewfile
+brew bundle install --file=${DOTDIR}/script/misc/Brewfile
 
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.screencapture disable-shadow -bool true
