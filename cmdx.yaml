@@ -1,0 +1,16 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/suzuki-shunsuke/cmdx/refs/heads/main/json-schema/cmdx.json
+tasks:
+- name: fmt
+  usage: Format files
+  description: Run formatter depending on the language specified in a sub task
+  tasks:
+    - name: lua
+      description: Format Lua files using StyLua
+      script: stylua {{if not .write}}--check{{end}} --allow-hidden .
+      flags:
+      - name: write
+        short: w
+        usage: if true, overwrite malformed files with the formatted result
+        type: bool
+        default: false
