@@ -14,3 +14,12 @@ tasks:
         usage: if true, overwrite malformed files with the formatted result
         type: bool
         default: false
+    - name: toml
+      description: Format TOML files using Taplo
+      script: taplo format {{if not .write}}--check{{end}} --diff
+      flags:
+      - name: write
+        short: w
+        usage: if true, overwrite malformed files with the formatted result
+        type: bool
+        default: false
