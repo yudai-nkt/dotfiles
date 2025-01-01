@@ -1,5 +1,5 @@
 DOTDIR := $(PWD)
-EXCLUDES := .github .gitignore .stylua.toml
+EXCLUDES := .github .gitignore
 DOTFILES := $(filter-out $(EXCLUDES), $(filter .%, $(shell git ls-tree --name-only HEAD)))
 
 list:

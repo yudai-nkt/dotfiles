@@ -1,3 +1,3 @@
 # it seems like empty TOML documents don't pass format check.
 # not sure if this is false negative though.
-exclude = [".stylua.toml"]
+exclude = ["stylua.toml"]
