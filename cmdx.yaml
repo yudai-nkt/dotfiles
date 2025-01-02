@@ -34,3 +34,12 @@ tasks:
         usage: if true, overwrite malformed files with the formatted result
         type: bool
         default: false
+    - name: yaml
+      description: Format YAML files using yamlfmt
+      script: yamlfmt {{if not .write}}--lint{{end}} .
+      flags:
+      - name: write
+        short: w
+        usage: if true, overwrite malformed files with the formatted result
+        type: bool
+        default: false

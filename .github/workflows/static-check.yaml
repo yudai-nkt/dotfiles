@@ -12,6 +12,7 @@ jobs:
       bash: ${{ steps.paths-filter.outputs.bash }}
       lua: ${{ steps.paths-filter.outputs.lua }}
       toml: ${{ steps.paths-filter.outputs.toml }}
+      yaml: ${{ steps.paths-filter.outputs.yaml }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
@@ -24,6 +25,8 @@ jobs:
               - '**.lua'
             toml:
               - '**.toml'
+            yaml:
+              - '**.yaml'
   bash:
     runs-on: ubuntu-latest
     needs: [check-for-update]
@@ -57,3 +60,14 @@ jobs:
           aqua_version: v2.40.0
       - name: Format TOML files
         run: cmdx fmt toml
+  yaml:
+    runs-on: ubuntu-latest
+    needs: [check-for-update]
+    if: ${{ needs.check-for-update.outputs.yaml == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquaproj/aqua-installer@v3.1.0
+        with:
+          aqua_version: v2.40.0
+      - name: Format YAML files
+        run: cmdx fmt yaml
