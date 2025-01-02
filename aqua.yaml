@@ -19,3 +19,6 @@ packages:
 - name: tamasfe/taplo@0.9.3
   description: A TOML toolkit written in Rust
   link: https://github.com/tamasfe/taplo
+- name: mvdan/sh@v3.10.0
+  description: A shell parser, formatter, and interpreter with bash support; includes shfmt
+  link: https://github.com/mvdan/sh
