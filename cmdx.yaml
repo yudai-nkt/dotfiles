@@ -1,45 +1,44 @@
----
 # yaml-language-server: $schema=https://raw.githubusercontent.com/suzuki-shunsuke/cmdx/refs/heads/main/json-schema/cmdx.json
 tasks:
-- name: fmt
-  usage: Format files
-  description: Run formatter depending on the language specified in a sub task
-  tasks:
-    - name: bash
-      description: Format Bash files using shfmt
-      # indent needs to be explicitly set because shfmt doesn't respect .editorconfig
-      # cf. https://github.com/mvdan/sh/issues/1090
-      script: shfmt {{if .write}}--write{{end}} --diff --indent 2 --language-dialect bash .
-      flags:
-      - name: write
-        short: w
-        usage: if true, overwrite malformed files with the formatted result
-        type: bool
-        default: false
-    - name: lua
-      description: Format Lua files using StyLua
-      script: stylua {{if not .write}}--check{{end}} --allow-hidden .
-      flags:
-      - name: write
-        short: w
-        usage: if true, overwrite malformed files with the formatted result
-        type: bool
-        default: false
-    - name: toml
-      description: Format TOML files using Taplo
-      script: taplo format {{if not .write}}--check{{end}} --diff
-      flags:
-      - name: write
-        short: w
-        usage: if true, overwrite malformed files with the formatted result
-        type: bool
-        default: false
-    - name: yaml
-      description: Format YAML files using yamlfmt
-      script: yamlfmt {{if not .write}}--lint{{end}} .
-      flags:
-      - name: write
-        short: w
-        usage: if true, overwrite malformed files with the formatted result
-        type: bool
-        default: false
+  - name: fmt
+    usage: Format files
+    description: Run formatter depending on the language specified in a sub task
+    tasks:
+      - name: bash
+        description: Format Bash files using shfmt
+        # indent needs to be explicitly set because shfmt doesn't respect .editorconfig
+        # cf. https://github.com/mvdan/sh/issues/1090
+        script: shfmt {{if .write}}--write{{end}} --diff --indent 2 --language-dialect bash .
+        flags:
+          - name: write
+            short: w
+            usage: if true, overwrite malformed files with the formatted result
+            type: bool
+            default: false
+      - name: lua
+        description: Format Lua files using StyLua
+        script: stylua {{if not .write}}--check{{end}} --allow-hidden .
+        flags:
+          - name: write
+            short: w
+            usage: if true, overwrite malformed files with the formatted result
+            type: bool
+            default: false
+      - name: toml
+        description: Format TOML files using Taplo
+        script: taplo format {{if not .write}}--check{{end}} --diff
+        flags:
+          - name: write
+            short: w
+            usage: if true, overwrite malformed files with the formatted result
+            type: bool
+            default: false
+      - name: yaml
+        description: Format YAML files using yamlfmt
+        script: yamlfmt {{if not .write}}--lint{{end}} .
+        flags:
+          - name: write
+            short: w
+            usage: if true, overwrite malformed files with the formatted result
+            type: bool
+            default: false
