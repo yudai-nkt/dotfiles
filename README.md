@@ -1,5 +1,8 @@
 # dotfiles
 
+[![Setup fresh machine](https://github.com/yudai-nkt/dotfiles/actions/workflows/setup-fresh-machine.yaml/badge.svg)](https://github.com/yudai-nkt/dotfiles/actions/workflows/setup-fresh-machine.yaml?query=branch%3Amaster)
+[![Static check](https://github.com/yudai-nkt/dotfiles/actions/workflows/static-check.yaml/badge.svg)](https://github.com/yudai-nkt/dotfiles/actions/workflows/static-check.yaml?query=branch%3Amaster)
+
 My dotfiles and setup scripts
 
 ## Overview
