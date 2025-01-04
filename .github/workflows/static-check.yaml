@@ -80,4 +80,10 @@ jobs:
         run: cmdx fmt yaml
       - name: Lint GitHub Actions workflow files
         if: ${{ needs.check-for-update.outputs.workflow == 'true' }}
-        run: cmdx lint workflow
+        # It looks like lazy install doesn't work with shellcheck
+        # integration in actionlint. Running shellcheck beforehand
+        # should work around the problem.
+        # cf. https://github.com/yudai-nkt/dotfiles/actions/runs/12610684489/job/35145529593
+        run: |
+          shellcheck --version > /dev/null
+          cmdx lint workflow
