@@ -42,3 +42,16 @@ tasks:
             usage: if true, overwrite malformed files with the formatted result
             type: bool
             default: false
+  - name: lint
+    usage: Lint files
+    description: Run linter depending on the language specified in a sub task
+    tasks:
+      - name: bash
+        description: Lint Bash files usign ShellCheck
+        script: shellcheck --shell=bash --external-sources script/*.sh
+      - name: lua
+        description: Lint Lua files using selene
+        script: selene .
+      - name: workflow
+        description: Lint GitHub Actions workflow files using actionlint
+        script: actionlint

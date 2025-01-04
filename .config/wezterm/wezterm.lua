@@ -13,7 +13,7 @@ config.window_frame = {
 	font = wezterm.font("MonaspiceNe Nerd Font Mono"),
 	font_size = 14,
 }
-color_scheme = wezterm.color.get_builtin_schemes()[config.color_scheme]
+local color_scheme = wezterm.color.get_builtin_schemes()[config.color_scheme]
 config.colors = {
 	tab_bar = {
 		active_tab = {

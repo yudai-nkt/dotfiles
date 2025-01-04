@@ -19,7 +19,7 @@ jobs:
         run: |
           BREW_PREFIX="$(brew --prefix)"
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-          sudo rm -rf $BREW_PREFIX
+          sudo rm -rf "$BREW_PREFIX"
         env:
           NONINTERACTIVE: 1
       - name: Run install command

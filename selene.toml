@@ -1,0 +1,5 @@
+std = "lua51+neovim"
+
+[lints]
+# heavily used in lazy.nvim
+mixed_table = "allow"

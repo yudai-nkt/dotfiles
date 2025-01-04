@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load useful stuff
-source ${DOTDIR}/script/lib/util.sh
+source "${DOTDIR}"/script/lib/util.sh
 
 # Install Xcode Command Line Tools
 # xcode-select --install
@@ -21,11 +21,11 @@ else
 fi
 
 # Install Homebrew formulae
-brew bundle install --file=${DOTDIR}/script/misc/Brewfile
+brew bundle install --file="${DOTDIR}"/script/misc/Brewfile
 
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.screencapture disable-shadow -bool true
-mkdir -p ${HOME}/Pictures/screenshots && defaults write com.apple.screencapture location ${HOME}/Pictures/screenshots
+mkdir -p "${HOME}"/Pictures/screenshots && defaults write com.apple.screencapture location "${HOME}"/Pictures/screenshots
 
 # Show English directory names in Finder
 for dir in Desktop Documents Downloads Movies Music Pictures Public; do

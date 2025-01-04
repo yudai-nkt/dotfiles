@@ -24,3 +24,12 @@ packages:
   - name: google/yamlfmt@v0.14.0
     description: An extensible command line tool or library to format yaml files
     link: https://github.com/google/yamlfmt
+  - name: koalaman/shellcheck@v0.10.0
+    description: ShellCheck, a static analysis tool for shell scripts
+    link: https://github.com/koalaman/shellcheck
+  - name: Kampfkarren/selene@0.27.1
+    description: A blazing-fast modern Lua linter written in Rust
+    link: https://github.com/Kampfkarren/selene
+  - name: rhysd/actionlint@v1.7.5
+    description: Static checker for GitHub Actions workflow files
+    link: https://github.com/rhysd/actionlint

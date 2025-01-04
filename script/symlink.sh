@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Load useful stuff
-source ${DOTDIR}/script/lib/util.sh
+source "${DOTDIR}"/script/lib/util.sh
 
 dotfiles=$(make list | sed '1d')
 
 for file in ${dotfiles}; do
-  ln -sfnv ${DOTDIR}/${file} ${HOME}/${file}
+  ln -sfnv "${DOTDIR}/${file}" "${HOME}/${file}"
 done
 
 if is_macos; then
   mkdir -p "$HOME/Library/Application Support/Code/User"
-  ln -sfnv ${DOTDIR}/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+  ln -sfnv "${DOTDIR}"/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 fi

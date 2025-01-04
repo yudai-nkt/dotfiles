@@ -12,6 +12,7 @@ jobs:
       bash: ${{ steps.paths-filter.outputs.bash }}
       lua: ${{ steps.paths-filter.outputs.lua }}
       toml: ${{ steps.paths-filter.outputs.toml }}
+      workflow: ${{ steps.paths-filter.outputs.workflow }}
       yaml: ${{ steps.paths-filter.outputs.yaml }}
     steps:
       - uses: actions/checkout@v4
@@ -25,6 +26,8 @@ jobs:
               - '**.lua'
             toml:
               - '**.toml'
+            workflow:
+              - '.github/workflows/*.yaml'
             yaml:
               - '**.yaml'
   bash:
@@ -38,6 +41,8 @@ jobs:
           aqua_version: v2.40.0
       - name: Format Bash files
         run: cmdx fmt bash
+      - name: Lint Bash files
+        run: cmdx lint bash
   lua:
     runs-on: ubuntu-latest
     needs: [check-for-update]
@@ -49,6 +54,8 @@ jobs:
           aqua_version: v2.40.0
       - name: Format Lua files
         run: cmdx fmt lua
+      - name: Lint Lua files
+        run: cmdx lint lua
   toml:
     runs-on: ubuntu-latest
     needs: [check-for-update]
@@ -71,3 +78,6 @@ jobs:
           aqua_version: v2.40.0
       - name: Format YAML files
         run: cmdx fmt yaml
+      - name: Lint GitHub Actions workflow files
+        if: ${{ needs.check-for-update.outputs.workflow == 'true' }}
+        run: cmdx lint workflow
