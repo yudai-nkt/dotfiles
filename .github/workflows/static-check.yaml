@@ -1,4 +1,4 @@
-name: Static Check
+name: Static check
 on: push
 defaults:
   run:
