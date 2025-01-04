@@ -8,8 +8,11 @@
   "packageRules": [
     {
       "matchFileNames": ["**/aqua.yaml"],
+      "addLabels": ["aqua"]
+    },
+    {
+      "matchFileNames": ["**/aqua.yaml"],
       "matchUpdateTypes": ["minor", "patch"],
-      "addLabels": ["aqua"],
       "automerge": true
     },
     {
