@@ -48,7 +48,7 @@ tasks:
     tasks:
       - name: bash
         description: Lint Bash files usign ShellCheck
-        script: shellcheck --shell=bash --external-sources script/*.sh
+        script: find . -type f -name '*.sh' -exec shellcheck --shell=bash --external-sources {} +
       - name: lua
         description: Lint Lua files using selene
         script: selene .

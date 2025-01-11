@@ -33,3 +33,9 @@ packages:
   - name: rhysd/actionlint@v1.7.6
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
+  - name: evilmartians/lefthook@v1.10.1
+    description: Fast and powerful Git hooks manager for any type of projects
+    link: https://github.com/evilmartians/lefthook
+  - name: mikefarah/yq@v4.44.6
+    description: yq is a portable command-line YAML processor
+    link: https://github.com/mikefarah/yq
