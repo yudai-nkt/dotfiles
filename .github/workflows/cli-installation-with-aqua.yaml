@@ -22,5 +22,5 @@ jobs:
         # Confirming each and every feature of all the commands is nearly
         # impossible, so we just check if the installed commands can be run
         # with --version option at the very least (all the commands installed
-        # with aqua have this option at the moment).
-        run: for cmd in "$(aqua root-dir)"/bin/*; do $cmd --version; done
+        # with aqua have this option at the moment except for lefthook).
+        run: for cmd in "$(aqua root-dir)"/bin/*; do $cmd --version 2>/dev/null || $cmd version; done
