@@ -1,13 +1,5 @@
 #!/bin/bash
 
-function is_inroot() {
-  if [[ ${1%/*} == ${1} ]]; then
-    return 0
-  else
-    return 1
-  fi
-}
-
 function is_macos() {
   if [[ $(uname) == "Darwin" ]]; then
     return 0
