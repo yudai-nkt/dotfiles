@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HEAD="$(git rev-parse --verify HEAD >/dev/null 2>&1)"
+HEAD="$(git rev-parse --verify HEAD)"
 readonly HEAD
 MERGE_HEAD="$(git rev-parse --verify MERGE_HEAD 2>/dev/null)"
 # In case of fast-forward, where MERGE_HEAD doesn't exist, use FETCH_HEAD instead.
