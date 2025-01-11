@@ -7,7 +7,7 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.291.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.295.1 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: JohnnyMorganz/StyLua@v2.0.2
     description: An opinionated Lua code formatter
@@ -21,7 +21,7 @@ packages:
   - name: mvdan/sh@v3.10.0
     description: A shell parser, formatter, and interpreter with bash support; includes shfmt
     link: https://github.com/mvdan/sh
-  - name: google/yamlfmt@v0.14.0
+  - name: google/yamlfmt@v0.15.0
     description: An extensible command line tool or library to format yaml files
     link: https://github.com/google/yamlfmt
   - name: koalaman/shellcheck@v0.10.0
