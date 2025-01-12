@@ -34,7 +34,7 @@ aqua_version="$(
 )"
 
 if [[ $aqua_version =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-  echo -e "\033[38;5;118m[INFO]\033[m aqua is updated, run \033[38;5;204mbrew upgrade aquaproj/aqua/aqua@$aqua_version\033[m"
+  echo -e "\033[38;5;118m[INFO]\033[m aqua is updated to $aqua_version, run \033[38;5;204mbrew upgrade aquaproj/aqua/aqua\033[m"
 else
   echo -e "\033[38;5;226m[WARN]\033[m workflow file is malformed"
 fi
