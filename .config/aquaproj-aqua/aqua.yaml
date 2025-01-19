@@ -15,7 +15,7 @@ packages:
   - name: starship/starship@v1.22.1
     description: The minimal, blazing-fast, and infinitely customizable prompt for any shell
     link: https://github.com/starship/starship
-  - name: rhysd/actionlint@v1.7.6
+  - name: rhysd/actionlint@v1.7.7
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
   - name: denoland/deno@v2.1.6
