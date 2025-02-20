@@ -21,7 +21,7 @@ packages:
   - name: denoland/deno@v2.2.0
     description: A modern runtime for JavaScript and TypeScript
     link: https://github.com/denoland/deno
-  - name: junegunn/fzf@v0.60.0
+  - name: junegunn/fzf@v0.60.1
     description: ":cherry_blossom: A command-line fuzzy finder"
     link: https://github.com/junegunn/fzf
   - name: cli/cli@v2.67.0
