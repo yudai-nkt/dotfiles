@@ -45,7 +45,7 @@ packages:
   - name: dandavison/delta@0.18.2
     description: A syntax-highlighting pager for git, diff, and grep output
     link: https://github.com/dandavison/delta
-  - name: neovim/neovim@v0.11.0
+  - name: neovim/neovim@v0.11.1
     description: Vim-fork focused on extensibility and usability
     link: https://github.com/neovim/neovim
   - name: LuaLS/lua-language-server@3.14.0
