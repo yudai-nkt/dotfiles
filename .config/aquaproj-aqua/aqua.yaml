@@ -9,7 +9,7 @@ registries:
   - type: standard
     ref: v4.346.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: rossmacarthur/sheldon@0.8.1
+  - name: rossmacarthur/sheldon@0.8.2
     description: ":bowtie: Fast, configurable, shell plugin manager"
     link: https://github.com/rossmacarthur/sheldon
   - name: starship/starship@v1.23.0
