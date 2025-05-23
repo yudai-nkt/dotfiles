@@ -15,7 +15,7 @@ packages:
   - name: suzuki-shunsuke/cmdx@v2.0.0
     description: Task runner. It provides useful help messages and supports interactive prompts and validation of arguments
     link: https://github.com/suzuki-shunsuke/cmdx
-  - name: tamasfe/taplo@0.9.3
+  - name: tamasfe/taplo@0.10.0
     description: A TOML toolkit written in Rust
     link: https://github.com/tamasfe/taplo
   - name: mvdan/sh@v3.11.0
