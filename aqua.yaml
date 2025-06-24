@@ -21,7 +21,7 @@ packages:
   - name: mvdan/sh@v3.11.0
     description: A shell parser, formatter, and interpreter with bash support; includes shfmt
     link: https://github.com/mvdan/sh
-  - name: google/yamlfmt@v0.17.1
+  - name: google/yamlfmt@v0.17.2
     description: An extensible command line tool or library to format yaml files
     link: https://github.com/google/yamlfmt
   - name: koalaman/shellcheck@v0.10.0
