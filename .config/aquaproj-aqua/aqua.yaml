@@ -48,7 +48,7 @@ packages:
   - name: neovim/neovim@v0.11.2
     description: Vim-fork focused on extensibility and usability
     link: https://github.com/neovim/neovim
-  - name: LuaLS/lua-language-server@3.14.0
+  - name: LuaLS/lua-language-server@3.15.0
     description: A language server that offers Lua language support - programmed in Lua
     link: https://github.com/LuaLS/lua-language-server
   - name: sharkdp/bat@v0.25.0
