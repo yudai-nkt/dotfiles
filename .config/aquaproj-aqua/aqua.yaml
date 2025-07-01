@@ -30,7 +30,7 @@ packages:
   - name: x-motemen/ghq@v1.8.0
     description: Remote repository management made easy
     link: https://github.com/x-motemen/ghq
-  - name: jqlang/jq@jq-1.8.0
+  - name: jqlang/jq@jq-1.8.1
     description: Command-line JSON processor
     link: https://github.com/jqlang/jq
   - name: tealdeer-rs/tealdeer@v1.7.2
