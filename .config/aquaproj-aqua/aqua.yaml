@@ -18,7 +18,7 @@ packages:
   - name: rhysd/actionlint@v1.7.7
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
-  - name: denoland/deno@v2.4.1
+  - name: denoland/deno@v2.4.2
     description: A modern runtime for JavaScript and TypeScript
     link: https://github.com/denoland/deno
   - name: junegunn/fzf@v0.64.0
