@@ -12,7 +12,7 @@ packages:
   - name: JohnnyMorganz/StyLua@v2.1.0
     description: An opinionated Lua code formatter
     link: https://github.com/JohnnyMorganz/StyLua
-  - name: suzuki-shunsuke/cmdx@v2.0.0
+  - name: suzuki-shunsuke/cmdx@v2.0.2
     description: Task runner. It provides useful help messages and supports interactive prompts and validation of arguments
     link: https://github.com/suzuki-shunsuke/cmdx
   - name: tamasfe/taplo@0.10.0
