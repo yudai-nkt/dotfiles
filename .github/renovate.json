@@ -20,6 +20,11 @@
       "addLabels": ["aqua"]
     },
     {
+      "matchPackageNames": ["aquaproj/*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchManagers": ["mise"],
       "enabled": false
     }
