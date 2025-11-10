@@ -16,7 +16,7 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["aquaproj/aqua"],
+      "matchPackageNames": ["aquaproj/*"],
       "addLabels": ["aqua"]
     },
     {
