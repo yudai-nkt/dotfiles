@@ -36,7 +36,7 @@ jobs:
     if: ${{ needs.check-for-update.outputs.bash == 'true' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: aquaproj/aqua-installer@v3.1.2
+      - uses: aquaproj/aqua-installer@v4.0.4
         with:
           aqua_version: v2.55.1
       - name: Format Bash files
@@ -49,7 +49,7 @@ jobs:
     if: ${{ needs.check-for-update.outputs.lua == 'true' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: aquaproj/aqua-installer@v3.1.2
+      - uses: aquaproj/aqua-installer@v4.0.4
         with:
           aqua_version: v2.55.1
       - name: Format Lua files
@@ -62,7 +62,7 @@ jobs:
     if: ${{ needs.check-for-update.outputs.toml == 'true' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: aquaproj/aqua-installer@v3.1.2
+      - uses: aquaproj/aqua-installer@v4.0.4
         with:
           aqua_version: v2.55.1
       - name: Format TOML files
@@ -73,7 +73,7 @@ jobs:
     if: ${{ needs.check-for-update.outputs.yaml == 'true' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: aquaproj/aqua-installer@v3.1.2
+      - uses: aquaproj/aqua-installer@v4.0.4
         with:
           aqua_version: v2.55.1
       - name: Format YAML files
