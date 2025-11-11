@@ -7,7 +7,7 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.346.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.433.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: rossmacarthur/sheldon@0.8.5
     description: ":bowtie: Fast, configurable, shell plugin manager"
@@ -15,7 +15,7 @@ packages:
   - name: starship/starship@v1.23.0
     description: The minimal, blazing-fast, and infinitely customizable prompt for any shell
     link: https://github.com/starship/starship
-  - name: rhysd/actionlint@v1.7.7
+  - name: rhysd/actionlint@v1.7.8
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
   - name: denoland/deno@v2.4.5
@@ -39,7 +39,7 @@ packages:
   - name: jdx/mise@v2025.8.20
     description: dev tools, env vars, task runner
     link: https://github.com/jdx/mise
-  - name: atuinsh/atuin@v18.8.0
+  - name: atuinsh/atuin@v18.10.0
     description: Magical shell history
     link: https://github.com/atuinsh/atuin
   - name: dandavison/delta@0.18.2

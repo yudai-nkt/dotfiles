@@ -7,12 +7,12 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.346.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.433.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: JohnnyMorganz/StyLua@v2.1.0
     description: An opinionated Lua code formatter
     link: https://github.com/JohnnyMorganz/StyLua
-  - name: suzuki-shunsuke/cmdx@v2.0.0
+  - name: suzuki-shunsuke/cmdx@v2.0.2
     description: Task runner. It provides useful help messages and supports interactive prompts and validation of arguments
     link: https://github.com/suzuki-shunsuke/cmdx
   - name: tamasfe/taplo@0.10.0
@@ -30,7 +30,7 @@ packages:
   - name: Kampfkarren/selene@0.29.0
     description: A blazing-fast modern Lua linter written in Rust
     link: https://github.com/Kampfkarren/selene
-  - name: rhysd/actionlint@v1.7.7
+  - name: rhysd/actionlint@v1.7.8
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
   - name: evilmartians/lefthook@v1.12.3
