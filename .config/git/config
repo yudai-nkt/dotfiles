@@ -21,7 +21,7 @@
 	ff = false
 	conflictStyle = zdiff3
 [pull]
-	ff = only
+	rebase = false
 [init]
 	defaultBranch = main
 [interactive]
