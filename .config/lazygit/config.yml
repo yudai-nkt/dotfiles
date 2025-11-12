@@ -5,11 +5,13 @@ gui:
   mouseEvents: false
   spinner:
     frames:
-      - ⣾
-      - ⣽
-      - ⣻
-      - ⢿
-      - ⡿
-      - ⣟
-      - ⣯
-      - ⣷
+      - ⠋
+      - ⠙
+      - ⠹
+      - ⠸
+      - ⠼
+      - ⠴
+      - ⠦
+      - ⠧
+      - ⠇
+      - ⠏
