@@ -46,11 +46,10 @@ cask "font-monaspace-nerd-font"
 cask "font-noto-sans-cjk-jp"
 cask "font-roboto"
 
-# Installation with mas is disabled because it doesn't work in
-# CI, where I cannot log in to App Store.
-# However, the following lines are kept as a comment instead of
-# being removed as they are still helpful for manual installation
-# mas "Adobe Lightroom", id: 1451544217
+# Installation with mas is skipped on CI, where I cannot log in to App Store.
+if ENV["CI"] != "true"
+  mas "Adobe Lightroom", id: 1451544217
+end
 
 vscode "astro-build.astro-vscode"
 vscode "bierner.markdown-preview-github-styles"
