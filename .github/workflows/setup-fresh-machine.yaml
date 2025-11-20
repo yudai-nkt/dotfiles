@@ -14,7 +14,7 @@ jobs:
   setup-fresh-machine:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Uninstall built-in Homebrew
         run: |
           BREW_PREFIX="$(brew --prefix)"
