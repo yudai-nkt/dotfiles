@@ -24,6 +24,7 @@ fi
 brew bundle install --file="${DOTDIR}"/script/misc/Brewfile
 
 defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.screencapture disable-shadow -bool true
 mkdir -p "${HOME}"/Pictures/screenshots && defaults write com.apple.screencapture location "${HOME}"/Pictures/screenshots
 
