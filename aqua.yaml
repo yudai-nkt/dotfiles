@@ -7,7 +7,7 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.435.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.444.2 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: JohnnyMorganz/StyLua@v2.3.1
     description: An opinionated Lua code formatter
@@ -30,12 +30,12 @@ packages:
   - name: Kampfkarren/selene@0.29.0
     description: A blazing-fast modern Lua linter written in Rust
     link: https://github.com/Kampfkarren/selene
-  - name: rhysd/actionlint@v1.7.8
+  - name: rhysd/actionlint@v1.7.9
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
-  - name: evilmartians/lefthook@v1.13.6
+  - name: evilmartians/lefthook@v2.0.9
     description: Fast and powerful Git hooks manager for any type of projects
     link: https://github.com/evilmartians/lefthook
-  - name: mikefarah/yq@v4.48.2
+  - name: mikefarah/yq@v4.49.2
     description: yq is a portable command-line YAML processor
     link: https://github.com/mikefarah/yq

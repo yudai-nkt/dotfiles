@@ -13,10 +13,10 @@ jobs:
       AQUA_GLOBAL_CONFIG: .config/aquaproj-aqua/aqua.yaml
       AQUA_LOG_COLOR: always
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@v4.0.4
         with:
-          aqua_version: v2.55.1
+          aqua_version: v2.55.3
           aqua_opts: --all
       - name: Confirm if the installed commands run as expected
         # Confirming each and every feature of all the commands is nearly

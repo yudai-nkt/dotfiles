@@ -15,7 +15,7 @@ jobs:
       workflow: ${{ steps.paths-filter.outputs.workflow }}
       yaml: ${{ steps.paths-filter.outputs.yaml }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: dorny/paths-filter@v3
         id: paths-filter
         with:
@@ -35,10 +35,10 @@ jobs:
     needs: [check-for-update]
     if: ${{ needs.check-for-update.outputs.bash == 'true' }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@v4.0.4
         with:
-          aqua_version: v2.55.1
+          aqua_version: v2.55.3
       - name: Format Bash files
         run: cmdx fmt bash
       - name: Lint Bash files
@@ -48,10 +48,10 @@ jobs:
     needs: [check-for-update]
     if: ${{ needs.check-for-update.outputs.lua == 'true' }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@v4.0.4
         with:
-          aqua_version: v2.55.1
+          aqua_version: v2.55.3
       - name: Format Lua files
         run: cmdx fmt lua
       - name: Lint Lua files
@@ -61,10 +61,10 @@ jobs:
     needs: [check-for-update]
     if: ${{ needs.check-for-update.outputs.toml == 'true' }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@v4.0.4
         with:
-          aqua_version: v2.55.1
+          aqua_version: v2.55.3
       - name: Format TOML files
         run: cmdx fmt toml
   yaml:
@@ -72,10 +72,10 @@ jobs:
     needs: [check-for-update]
     if: ${{ needs.check-for-update.outputs.yaml == 'true' }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@v4.0.4
         with:
-          aqua_version: v2.55.1
+          aqua_version: v2.55.3
       - name: Format YAML files
         run: cmdx fmt yaml
       - name: Lint GitHub Actions workflow files

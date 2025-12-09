@@ -7,21 +7,21 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.435.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.444.2 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: rossmacarthur/sheldon@0.8.5
     description: ":bowtie: Fast, configurable, shell plugin manager"
     link: https://github.com/rossmacarthur/sheldon
-  - name: starship/starship@v1.23.0
+  - name: starship/starship@v1.24.1
     description: The minimal, blazing-fast, and infinitely customizable prompt for any shell
     link: https://github.com/starship/starship
-  - name: rhysd/actionlint@v1.7.8
+  - name: rhysd/actionlint@v1.7.9
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
   - name: denoland/deno@v2.5.6
     description: A modern runtime for JavaScript and TypeScript
     link: https://github.com/denoland/deno
-  - name: junegunn/fzf@v0.66.1
+  - name: junegunn/fzf@v0.67.0
     description: ":cherry_blossom: A command-line fuzzy finder"
     link: https://github.com/junegunn/fzf
   - name: cli/cli@v2.83.1
@@ -33,10 +33,10 @@ packages:
   - name: jqlang/jq@jq-1.8.1
     description: Command-line JSON processor
     link: https://github.com/jqlang/jq
-  - name: tealdeer-rs/tealdeer@v1.7.2
+  - name: tealdeer-rs/tealdeer@v1.8.1
     description: A very fast implementation of tldr in Rust
     link: https://github.com/tealdeer-rs/tealdeer
-  - name: jdx/mise@v2025.11.5
+  - name: jdx/mise@v2025.12.1
     description: dev tools, env vars, task runner
     link: https://github.com/jdx/mise
   - name: atuinsh/atuin@v18.10.0
@@ -48,12 +48,12 @@ packages:
   - name: neovim/neovim@v0.11.5
     description: Vim-fork focused on extensibility and usability
     link: https://github.com/neovim/neovim
-  - name: LuaLS/lua-language-server@3.15.0
+  - name: LuaLS/lua-language-server@3.16.1
     description: A language server that offers Lua language support - programmed in Lua
     link: https://github.com/LuaLS/lua-language-server
-  - name: sharkdp/bat@v0.26.0
+  - name: sharkdp/bat@v0.26.1
     description: A cat(1) clone with wings
     link: https://github.com/sharkdp/bat
-  - name: jesseduffield/lazygit@v0.56.0
+  - name: jesseduffield/lazygit@v0.57.0
     description: simple terminal UI for git commands
     link: https://github.com/jesseduffield/lazygit
