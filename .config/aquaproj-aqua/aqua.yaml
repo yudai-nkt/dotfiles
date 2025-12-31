@@ -12,7 +12,7 @@ packages:
   - name: rossmacarthur/sheldon@0.8.5
     description: ":bowtie: Fast, configurable, shell plugin manager"
     link: https://github.com/rossmacarthur/sheldon
-  - name: starship/starship@v1.24.1
+  - name: starship/starship@v1.24.2
     description: The minimal, blazing-fast, and infinitely customizable prompt for any shell
     link: https://github.com/starship/starship
   - name: rhysd/actionlint@v1.7.10
