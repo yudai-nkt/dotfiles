@@ -54,6 +54,6 @@ packages:
   - name: sharkdp/bat@v0.26.1
     description: A cat(1) clone with wings
     link: https://github.com/sharkdp/bat
-  - name: jesseduffield/lazygit@v0.57.0
+  - name: jesseduffield/lazygit@v0.58.0
     description: simple terminal UI for git commands
     link: https://github.com/jesseduffield/lazygit
