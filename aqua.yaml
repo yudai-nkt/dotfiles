@@ -27,7 +27,7 @@ packages:
   - name: koalaman/shellcheck@v0.11.0
     description: ShellCheck, a static analysis tool for shell scripts
     link: https://github.com/koalaman/shellcheck
-  - name: Kampfkarren/selene@0.29.0
+  - name: Kampfkarren/selene@0.30.0
     description: A blazing-fast modern Lua linter written in Rust
     link: https://github.com/Kampfkarren/selene
   - name: rhysd/actionlint@v1.7.10
