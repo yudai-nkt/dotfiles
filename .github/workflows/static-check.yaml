@@ -16,7 +16,7 @@ jobs:
       yaml: ${{ steps.paths-filter.outputs.yaml }}
     steps:
       - uses: actions/checkout@v6
-      - uses: dorny/paths-filter@v3
+      - uses: dorny/paths-filter@v4
         id: paths-filter
         with:
           filters: |
