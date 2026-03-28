@@ -42,7 +42,7 @@ packages:
   - name: atuinsh/atuin@v18.13.6
     description: Magical shell history
     link: https://github.com/atuinsh/atuin
-  - name: dandavison/delta@0.19.1
+  - name: dandavison/delta@0.19.2
     description: A syntax-highlighting pager for git, diff, and grep output
     link: https://github.com/dandavison/delta
   - name: neovim/neovim@v0.11.6
