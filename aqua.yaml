@@ -30,7 +30,7 @@ packages:
   - name: Kampfkarren/selene@0.30.1
     description: A blazing-fast modern Lua linter written in Rust
     link: https://github.com/Kampfkarren/selene
-  - name: rhysd/actionlint@v1.7.11
+  - name: rhysd/actionlint@v1.7.12
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
   - name: evilmartians/lefthook@v2.1.4
