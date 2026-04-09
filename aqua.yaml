@@ -7,9 +7,9 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.444.2 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.492.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: JohnnyMorganz/StyLua@v2.3.1
+  - name: JohnnyMorganz/StyLua@v2.4.1
     description: An opinionated Lua code formatter
     link: https://github.com/JohnnyMorganz/StyLua
   - name: suzuki-shunsuke/cmdx@v2.0.2
@@ -18,24 +18,24 @@ packages:
   - name: tamasfe/taplo@0.10.0
     description: A TOML toolkit written in Rust
     link: https://github.com/tamasfe/taplo
-  - name: mvdan/sh@v3.12.0
+  - name: mvdan/sh@v3.13.1
     description: A shell parser, formatter, and interpreter with bash support; includes shfmt
     link: https://github.com/mvdan/sh
-  - name: google/yamlfmt@v0.20.0
+  - name: google/yamlfmt@v0.21.0
     description: An extensible command line tool or library to format yaml files
     link: https://github.com/google/yamlfmt
   - name: koalaman/shellcheck@v0.11.0
     description: ShellCheck, a static analysis tool for shell scripts
     link: https://github.com/koalaman/shellcheck
-  - name: Kampfkarren/selene@0.29.0
+  - name: Kampfkarren/selene@0.30.1
     description: A blazing-fast modern Lua linter written in Rust
     link: https://github.com/Kampfkarren/selene
-  - name: rhysd/actionlint@v1.7.9
+  - name: rhysd/actionlint@v1.7.12
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
-  - name: evilmartians/lefthook@v2.0.9
+  - name: evilmartians/lefthook@v2.1.5
     description: Fast and powerful Git hooks manager for any type of projects
     link: https://github.com/evilmartians/lefthook
-  - name: mikefarah/yq@v4.49.2
+  - name: mikefarah/yq@v4.52.5
     description: yq is a portable command-line YAML processor
     link: https://github.com/mikefarah/yq
