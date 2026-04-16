@@ -64,7 +64,7 @@ alias ls='ls --color=auto --classify --ignore=.DS_Store'
 alias la='ls --almost-all'
 alias ll='ls -l --human-readable'
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 export FZF_DEFAULT_OPTS=$(cat << EOF
 --height=40% --reverse --border
 --color=bg+:#414559,bg:#303446,spinner:#f2d5cf,hl:#e78284
@@ -81,7 +81,6 @@ export ENHANCD_FILTER="fzf --preview 'tree -C -L 1 -a -I .git -I .DS_Store {}'"
 
 [ -f "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ] && source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-eval "$(atuin init zsh)"
 # this goes against aqua's best practice, but I'll see how it works (or not).
 # cf. https://zenn.dev/shunsuke_suzuki/books/aqua-handbook/viewer/tips
 eval "$(mise activate zsh)"
