@@ -65,14 +65,6 @@ alias la='ls --almost-all'
 alias ll='ls -l --human-readable'
 
 source <(fzf --zsh)
-export FZF_DEFAULT_OPTS=$(cat << EOF
---height=40% --reverse --border
---color=bg+:#414559,bg:#303446,spinner:#f2d5cf,hl:#e78284
---color=fg:#c6d0f5,header:#e78284,info:#ca9ee6,pointer:#f2d5cf
---color=marker:#babbf1,fg+:#c6d0f5,prompt:#ca9ee6,hl+:#e78284
---color=selected-bg:#51576d
-EOF
-)
 
 export ENHANCD_FILTER="fzf --preview 'tree -C -L 1 -a -I .git -I .DS_Store {}'"
 

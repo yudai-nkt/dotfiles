@@ -34,3 +34,10 @@ apply = ["defer"]
 [plugins.fzf-git]
 github = "junegunn/fzf-git.sh"
 apply = ["defer"]
+
+# defer doesn't work somehow even with zsh-defer'ed post hook,
+# hence the normal source
+[plugins.fzf-theme]
+github = "rose-pine/fzf"
+use = ["dist/rose-pine.sh"]
+hooks.post = "FZF_DEFAULT_OPTS+=' --height=40% --reverse --border'"
