@@ -7,7 +7,7 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.492.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.493.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: JohnnyMorganz/StyLua@v2.4.1
     description: An opinionated Lua code formatter
@@ -33,7 +33,7 @@ packages:
   - name: rhysd/actionlint@v1.7.12
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
-  - name: evilmartians/lefthook@v2.1.5
+  - name: evilmartians/lefthook@v2.1.6
     description: Fast and powerful Git hooks manager for any type of projects
     link: https://github.com/evilmartians/lefthook
   - name: mikefarah/yq@v4.52.5
