@@ -7,7 +7,7 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.494.1 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.496.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: JohnnyMorganz/StyLua@v2.4.1
     description: An opinionated Lua code formatter
@@ -36,6 +36,6 @@ packages:
   - name: evilmartians/lefthook@v2.1.6
     description: Fast and powerful Git hooks manager for any type of projects
     link: https://github.com/evilmartians/lefthook
-  - name: mikefarah/yq@v4.52.5
+  - name: mikefarah/yq@v4.53.2
     description: yq is a portable command-line YAML processor
     link: https://github.com/mikefarah/yq
