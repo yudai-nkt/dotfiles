@@ -1,0 +1,10 @@
+#!/bin/bash
+
+options=(
+  style=round
+  width=8
+  hidpi=off
+  active_color=0xffea9d34 # Pine from Rosé Pine Dawn
+)
+
+borders "${options[@]}"

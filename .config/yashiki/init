@@ -30,3 +30,7 @@ yashiki rule-add --window-level floating float
 yashiki rule-add --window-level other ignore
 
 yashiki rule-add --close-button none ignore
+
+yashiki set-outer-gap 8
+
+yashiki exec --track "borders"

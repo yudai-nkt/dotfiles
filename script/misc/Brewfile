@@ -1,3 +1,4 @@
+tap "felixkratz/formulae"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
@@ -21,6 +22,7 @@ brew "tree"
 brew "vim"
 brew "wget"
 brew "zsh"
+brew "felixkratz/formulae/borders"
 brew "qmk/qmk/qmk"
 
 cask "adobe-acrobat-reader"
