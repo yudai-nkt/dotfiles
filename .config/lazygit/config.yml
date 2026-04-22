@@ -1,5 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
 # Config relating to the Lazygit UI
+git:
+  pagers:
+    - pager: delta --paging=never
+
 gui:
   language: en
   mouseEvents: false
