@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+tags=(
+  't com.mitchellh.ghostty'
+  'w com.vivaldi.Vivaldi'
+  'e org.kicad.kicad'
+  'm *'
+  'v com.microsoft.VSCode'
+)
+
+for i in "${!tags[@]}"; do
+  bitmask=$((1 << $i))
+  key=${tags[$i]%% *}
+  app_id=${tags[$i]##* }
+  yashiki bind "alt-${key}" tag-toggle "${bitmask}"
+  yashiki bind "alt-ctrl-${key}" tag-view "${bitmask}"
+  yashiki rule-add --app-id "${app_id}" tags "${bitmask}"
+done
+
+yashiki layout-set-default tatami
+
+yashiki bind alt-j window-focus next
+yashiki bind alt-k window-focus prev
+
+yashiki rule-add --subrole Dialog float
+yashiki rule-add --subrole FloatingWindow float
+yashiki rule-add --subrole AXUnknown ignore
+
+yashiki rule-add --window-level floating float
+yashiki rule-add --window-level other ignore
+
+yashiki rule-add --close-button none ignore

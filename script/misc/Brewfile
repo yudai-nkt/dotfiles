@@ -1,7 +1,8 @@
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
-
+tap "typester/yashiki"
+brew "bash"
 brew "coreutils"
 brew "curl"
 brew "ffmpeg"
@@ -51,6 +52,7 @@ if ENV["CI"] != "true"
   mas "Adobe Lightroom", id: 1451544217
 end
 
+cask "typester/yashiki/yashiki"
 vscode "astro-build.astro-vscode"
 vscode "bierner.markdown-preview-github-styles"
 vscode "biomejs.biome"
