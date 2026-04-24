@@ -42,7 +42,7 @@ packages:
   - name: dandavison/delta@0.19.2
     description: A syntax-highlighting pager for git, diff, and grep output
     link: https://github.com/dandavison/delta
-  - name: neovim/neovim@v0.12.1
+  - name: neovim/neovim@v0.12.2
     description: Vim-fork focused on extensibility and usability
     link: https://github.com/neovim/neovim
   - name: LuaLS/lua-language-server@3.18.2
