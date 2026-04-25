@@ -9,6 +9,7 @@ export BREW_PREFIX=$(brew --prefix)
 path=(
   $(aqua root-dir)/bin(N-/)
   $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/)
+  $HOME/.moon/bin(N-/)
   $HOME/.cargo/bin(N-/)
   $HOME/.deno/bin(N-/)
   $HOME/.poetry/bin(N-/)
