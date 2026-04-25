@@ -46,6 +46,9 @@ export AQUA_GLOBAL_CONFIG=${XDG_CONFIG_HOME}/aquaproj-aqua/aqua.yaml
 export TEALDEER_CONFIG_DIR=${XDG_CONFIG_HOME}/tealdeer
 export TEALDEER_CACHE_DIR=${XDG_CACHE_HOME}/tealdeer
 
+# Claude Code
+export CLAUDE_CONFIG_DIR=${XDG_CONFIG_HOME}/claude
+
 export GIBO_BOILERPLATES=${XDG_DATA_HOME}/gibo
 
 export GOPATH=${HOME}
