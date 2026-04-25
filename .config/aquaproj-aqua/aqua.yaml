@@ -7,7 +7,7 @@
 #   - all
 registries:
   - type: standard
-    ref: v4.496.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.498.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: rossmacarthur/sheldon@0.8.5
     description: ":bowtie: Fast, configurable, shell plugin manager"
@@ -18,7 +18,7 @@ packages:
   - name: rhysd/actionlint@v1.7.12
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
-  - name: denoland/deno@v2.7.12
+  - name: denoland/deno@v2.7.13
     description: A modern runtime for JavaScript and TypeScript
     link: https://github.com/denoland/deno
   - name: junegunn/fzf@v0.71.0
@@ -36,13 +36,13 @@ packages:
   - name: tealdeer-rs/tealdeer@v1.8.1
     description: A very fast implementation of tldr in Rust
     link: https://github.com/tealdeer-rs/tealdeer
-  - name: jdx/mise@v2026.4.18
+  - name: jdx/mise@v2026.4.20
     description: dev tools, env vars, task runner
     link: https://github.com/jdx/mise
   - name: dandavison/delta@0.19.2
     description: A syntax-highlighting pager for git, diff, and grep output
     link: https://github.com/dandavison/delta
-  - name: neovim/neovim@v0.12.1
+  - name: neovim/neovim@v0.12.2
     description: Vim-fork focused on extensibility and usability
     link: https://github.com/neovim/neovim
   - name: LuaLS/lua-language-server@3.18.2
