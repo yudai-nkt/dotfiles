@@ -2,3 +2,14 @@ font-family = "MonaspiceNe Nerd Font Mono"
 theme = "Rose Pine"
 background-opacity = 0.8
 background-blur-radius = 20
+# most of my keyboars don't have physical number row
+keybind = super+a=goto_tab:1
+keybind = super+s=goto_tab:2
+keybind = super+d=goto_tab:3
+keybind = super+f=goto_tab:1
+keybind = super+g=goto_tab:2
+keybind = super+h=goto_tab:3
+keybind = super+j=goto_tab:1
+keybind = super+k=goto_tab:2
+keybind = super+l=goto_tab:3
+keybind = super+;=goto_tab:1
