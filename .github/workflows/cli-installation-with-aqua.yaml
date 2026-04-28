@@ -18,6 +18,8 @@ jobs:
         with:
           aqua_version: v2.57.2
           aqua_opts: --all
+      - name: Install Spotatui dependencies
+        run: brew install portaudio openssl@3
       - name: Confirm if the installed commands run as expected
         # Confirming each and every feature of all the commands is nearly
         # impossible, so we just check if the installed commands can be run
