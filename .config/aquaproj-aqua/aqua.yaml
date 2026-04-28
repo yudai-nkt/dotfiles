@@ -66,3 +66,6 @@ packages:
   - name: evilmartians/lefthook@v2.1.6
     description: Fast and powerful Git hooks manager for any type of projects
     link: https://github.com/evilmartians/lefthook
+  - name: LargeModGames/spotatui@v0.38.1
+    description: A fully standalone Spotify client for the terminal. Native streaming included, no daemon required
+    link: https://github.com/LargeModGames/spotatui
