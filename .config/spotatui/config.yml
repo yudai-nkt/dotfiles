@@ -47,7 +47,7 @@ behavior:
   enable_announcements: true
   announcement_feed_url: null
   seen_announcement_ids:
-  - 2026-02-27-major-refactor-complete
+    - 2026-02-27-major-refactor-complete
   shuffle_enabled: false
   liked_icon: ♥
   shuffle_icon: 🔀
