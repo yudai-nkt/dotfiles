@@ -18,7 +18,7 @@ packages:
   - name: rhysd/actionlint@v1.7.12
     description: Static checker for GitHub Actions workflow files
     link: https://github.com/rhysd/actionlint
-  - name: denoland/deno@v2.7.13
+  - name: denoland/deno@v2.7.14
     description: A modern runtime for JavaScript and TypeScript
     link: https://github.com/denoland/deno
   - name: junegunn/fzf@v0.72.0
@@ -36,7 +36,7 @@ packages:
   - name: tealdeer-rs/tealdeer@v1.8.1
     description: A very fast implementation of tldr in Rust
     link: https://github.com/tealdeer-rs/tealdeer
-  - name: jdx/mise@v2026.4.24
+  - name: jdx/mise@v2026.4.25
     description: dev tools, env vars, task runner
     link: https://github.com/jdx/mise
   - name: dandavison/delta@0.19.2
