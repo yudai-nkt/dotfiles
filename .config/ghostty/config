@@ -6,10 +6,10 @@ background-blur-radius = 20
 keybind = super+a=goto_tab:1
 keybind = super+s=goto_tab:2
 keybind = super+d=goto_tab:3
-keybind = super+f=goto_tab:1
-keybind = super+g=goto_tab:2
-keybind = super+h=goto_tab:3
-keybind = super+j=goto_tab:1
-keybind = super+k=goto_tab:2
-keybind = super+l=goto_tab:3
-keybind = super+;=goto_tab:1
+keybind = super+f=goto_tab:4
+keybind = super+g=goto_tab:5
+keybind = super+h=goto_tab:6
+keybind = super+j=goto_tab:7
+keybind = super+k=goto_tab:8
+keybind = super+l=goto_tab:9
+keybind = super+;=goto_tab:10
