@@ -60,7 +60,7 @@ packages:
   - name: anthropics/claude-code@v2.1.138
     description: "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands"
     link: https://github.com/anthropics/claude-code
-  - name: ast-grep/ast-grep@0.42.1
+  - name: ast-grep/ast-grep@0.42.2
     description: A CLI tool for code structural search, lint and rewriting. Written in Rust
     link: https://github.com/ast-grep/ast-grep
   - name: evilmartians/lefthook@v2.1.6
