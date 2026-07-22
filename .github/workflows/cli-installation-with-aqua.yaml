@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: aquaproj/aqua-installer@v4.0.5
         with:
-          aqua_version: v2.62.0
+          aqua_version: v2.62.1
           aqua_opts: --all
       - name: Install Spotatui dependencies
         run: brew install portaudio openssl@3
