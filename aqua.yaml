@@ -36,6 +36,6 @@ packages:
   - name: evilmartians/lefthook@v2.1.10
     description: Fast and powerful Git hooks manager for any type of projects
     link: https://github.com/evilmartians/lefthook
-  - name: mikefarah/yq@v4.53.3
+  - name: mikefarah/yq@v4.53.4
     description: yq is a portable command-line YAML processor
     link: https://github.com/mikefarah/yq
