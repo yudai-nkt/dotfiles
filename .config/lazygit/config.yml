@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
 # Config relating to the Lazygit UI
 git:
-  pagers:
-    - pager: delta --paging=never
+  diffRenderers:
+    - command: delta --paging=never
 gui:
   language: en
   mouseEvents: false
@@ -18,3 +18,33 @@ gui:
       - ⠧
       - ⠇
       - ⠏
+  theme:
+    activeBorderColor:
+      - "#31748f"
+      - bold
+    inactiveBorderColor:
+      - "#6e6a86"
+    searchingActiveBorderColor:
+      - "#ebbcba"
+      - bold
+    optionsTextColor:
+      - "#9ccfd8"
+    selectedLineBgColor:
+      - "#31748f"
+    inactiveViewSelectedLineBgColor:
+      - "#26233a"
+      - bold
+    cherryPickedCommitFgColor:
+      - "#1f1d2e"
+    cherryPickedCommitBgColor:
+      - "#ebbcba"
+    markedBaseCommitFgColor:
+      - "#9ccfd8"
+    markedBaseCommitBgColor:
+      - "#f6c177"
+    unstagedChangesColor:
+      - "#eb6f92"
+    defaultFgColor:
+      - "#e0def4"
+    authorColors:
+      '*': '#babbf1'
