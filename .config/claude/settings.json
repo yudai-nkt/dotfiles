@@ -9,7 +9,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "\"$CLAUDE_CONFIG_DIR\"/.claude/hooks/session-start.sh"
+            "command": "\"$CLAUDE_CONFIG_DIR\"/hooks/ban-dangerous-commands.sh"
           }
         ]
       }
