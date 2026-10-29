@@ -2,6 +2,10 @@
 
 This files describes how coding agents should work.
 
+## Communication language
+
+Communication with human on TUI should be done in the language specified in `settings.json`, but any documentation committed to Git repository must be written in English unless instructed otherwise.
+
 ## Code discovery
 
 Semantic and context-aware code search is more token-saving than textual search, hence the following guidelines:
