@@ -69,6 +69,6 @@ packages:
   - name: LargeModGames/spotatui@v0.47.0
     description: A fully standalone Spotify client for the terminal. Native streaming included, no daemon required
     link: https://github.com/LargeModGames/spotatui
-  - name: anomalyco/opencode@v2.2.2
+  - name: anomalyco/opencode@v2.2.3
     description: The AI coding agent built for the terminal
     link: https://github.com/anomalyco/opencode
