@@ -72,3 +72,6 @@ packages:
   - name: anomalyco/opencode@v2.3.2
     description: The AI coding agent built for the terminal
     link: https://github.com/anomalyco/opencode
+  - name: herdrdev/herdr@v0.9.5
+    description: the runtime your coding agents live on
+    link: https://github.com/herdrdev/herdr
