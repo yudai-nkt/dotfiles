@@ -75,3 +75,9 @@ packages:
   - name: herdrdev/herdr@v0.9.5
     description: the runtime your coding agents live on
     link: https://github.com/herdrdev/herdr
+  - name: lukeed/lane@v0.2.0
+    description: Copy-on-write worktrees with memory that survives them
+    link: https://github.com/lukeed/lane
+  - name: agavra/tuicr@v0.29.0
+    description: a code review TUI with vim keybindings
+    link: https://github.com/agavra/tuicr
