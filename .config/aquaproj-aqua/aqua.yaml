@@ -48,7 +48,7 @@ packages:
   - name: LuaLS/lua-language-server@3.19.2
     description: A language server that offers Lua language support - programmed in Lua
     link: https://github.com/LuaLS/lua-language-server
-  - name: sharkdp/bat@v0.26.1
+  - name: sharkdp/bat@v0.27.0
     description: A cat(1) clone with wings
     link: https://github.com/sharkdp/bat
   - name: jesseduffield/lazygit@v0.66.3
